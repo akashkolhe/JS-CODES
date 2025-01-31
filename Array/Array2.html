@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Object</title>
+</head>
+<style>
+    #id{
+        /* color: chocolate; */
+        font-size: 42px;
+    }
+</style>
+<body>
+    <center><h1>By Using New Keyword</h1></center>
+    <h3>Array Object....</h3>
+    <b><p id="id"></p></b>
+    <script>
+        let arr = new Array();
+        arr[0] = false;
+        arr[1] = 10 ;
+        arr[2] = "String";
+        arr[5] = 12.5;
+        console.log(arr);
+        // document.getElementById("id").innerHTML=arr;
+        let ele = document.getElementById("id");
+        ele.innerHTML=arr[Number(prompt("Enter the index of an array"))];
+        ele.style.color=prompt("Enter the color");
+    </script>
+</body>
+</html>

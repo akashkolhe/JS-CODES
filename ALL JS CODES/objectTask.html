@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1> All India CM Information.</h1>
+   <script>
+        let india=function info(state,country,cm,population,capital){
+            this.state = state,
+            this.country = country,
+            this.cm = cm,
+            this.population = population,
+            this.capital = capital;
+        }
+        let MH = new india("Maharshtra","India","Eknath_Shinde", 124904071,"Mumbai");
+        //console.log(mh);
+        
+        let AP = new india("Andhra_Pradesh","India","Yeduguri_Reddy", 49386799,"Amaravati");
+        //console.log(AP);
+        let GJ = new india("Gujrat","India","Bhupendra_Patel", 2500000,"Gandhinagar");
+        //console.log(GJ);
+        let UP = new india("Uttar_Pradesh","India","Yogi_Adityanath", 28000000,"Lucknow");
+        //console.log(UP);
+        let Delhi = new india("Delhi","India","Arvind_Kejriwal", 15217000,"NEW DELHI(NCT)");
+        //console.log(Delhi);
+        let Punjab = new india("Punjab","India","Bhagwant_Singh", 27700000,"Chandigarh");    
+        //console.log(Punjab);
+        console.log(UP.cm);
+        console.log(MH.population); 
+   </script>
+</body>
+</html>

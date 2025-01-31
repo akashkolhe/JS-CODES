@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #927df1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+        img{
+            height: 100px;
+            width: 150px;
+            cursor: pointer;
+        }
+        #right{
+            transform: rotate(180deg);
+        }
+        .top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+        .slider{
+            display: flex;
+            transition: all  1s ease;
+        }
+        .frame{
+            height: 300px;
+            width: 500px;
+            overflow: hidden;
+        }
+        .image{
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+           
+        }
+        .bottom{
+            display: flex;
+            gap: 30px;
+        }
+        .dot{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        
+      
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="top">
+        <img src="./arrow-g5ea5c889c_1280.png" class="left" alt="">
+        <div class="frame">
+            <div class="slider">
+              <div class="images"><img class="image" src="https://media.istockphoto.com/id/1428414824/photo/the-beautiful-view-of-an-alpine-lake-and-mountains-there-is-a-view-of-the-mountains-water-and.jpg?b=1&s=170667a&w=0&k=20&c=mTlh30QfOXgW-E9VvCGGCqA9QoqDrfTnyAWbmoYO4Cw=" alt=""></div>
+              <div class="images">
+                <img class="image" src="https://media.istockphoto.com/id/599102116/photo/landscape-nature-mountan-in-alps-with-rainbow.jpg?b=1&s=170667a&w=0&k=20&c=e54Ts4GG6V_EVu4-kHMdWWAjrxrJbchMCM72JJAZ1i0=" alt="">
+              </div>
+             <div class="images"> <img class="image"src="https://cdn.pixabay.com/photo/2013/04/04/12/34/mountains-100367__340.jpg" alt=""></div>
+           <div class=" images"> <img class="image"src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg" alt=""></div>
+            </div> 
+        </div>
+       <img src="./arrow-g5ea5c889c_1280.png" class="right" id="right"alt="" > 
+    </div>
+    <div class="bottom">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+   </div>
+   <script>
+    const left=document.querySelector(".left")
+    const right=document.querySelector(".right")
+    const slider=document.querySelector(".slider")
+    const images=document.querySelectorAll(".image")
+    const button=document.querySelectorAll(".dot")
+
+    var length=images.length;
+    let slideNum=1;
+
+    function resetBg() {
+        button.forEach((button)=>{
+            button.style.backgroundColor="transparent";
+
+        })
+        
+     }
+
+     button[0].style.backgroundColor="white"
+     button.forEach((button,i)=>{
+        button.addEventListener('click',()=>{
+            resetBg();
+            slider.style.transform= `translateX(-${i * 500}px)`
+            
+            button.style.backgroundColor="white"
+        })
+     })
+
+
+   
+     right.addEventListener("click", () => {
+        if(slideNum<length){
+        slider.style.transform = `translateX(-${slideNum * 500}px)`;
+        slideNum++;
+       
+        }else{
+            slider.style.transform = `translateX(0px)`;
+            slideNum=1;
+
+        }
+       
+     });
+     left.addEventListener('click',() =>{
+        if (slideNum>1) {
+            slider.style.transform= `translateX(-${(slideNum - 2) * 500}px)`
+            slideNum --;
+            
+        }
+        else{
+            slider.style.transform= `translateX(-${3 * 500}px)`
+            slideNum=length;
+        }
+     })
+    
+
+
+    
+
+  
+  
+    
+   
+    
+   
+    
+
+   </script>
+    
+</body>
+</html>

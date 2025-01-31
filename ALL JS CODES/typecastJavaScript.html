@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeCast</title>
+</head>
+<body>
+    <h1>Implicitly TypeCast</h1>
+    <h3>
+        num+num=number <br>
+        string+num=string----concatenation) <br>
+        string-num=num----substation because (+) concatenation sign not present <br>
+        boolean+num=boolean <br>
+        string+boolean=string <br>
+        boolean+boolean=num <br>
+        string+num=string <br>
+        boolean-num=num <br>
+    </h3>
+    <br>
+    <h1>Explicitly TypeCast</h1>
+    <h3>
+        
+    </h3>
+    <script>
+        // Implicitly type cast
+        console.log(5+5);        //10   (num+num=num)
+        console.log("5"+2);      //52 (string+num=string----concatenation)
+        console.log("5"-2);      //3  (string-num=num----substation because (+) concatenation sign not present)
+        console.log(true+1);     //2 (boolean+num=boolean)
+        console.log("true"+true);//truetrue (string+boolean=string)
+        console.log(true+true);  //2 (boolean+boolean=num)
+        console.log("true"+1);   //true1 (string+num=string)
+        console.log(false-2);    //-2 (boolean-num=num)
+
+
+        // Explicitly type cast
+        console.log("5"+5);//55
+        console.log(Number("5")+5); //10
+        console.log("true"+1);//true1
+        console.log(Boolean("true")+1);//2
+        console.log(Boolean("true")+"true");//truetrue
+        console.log(Boolean("true")+true);//2
+        console.log(Number("a")+10);//NaN(Not a Number)
+        console.log(String(5)+5);//55
+        console.log(String(false)-1);//NaN(Not a Number)
+    </script>
+</body>
+</html>

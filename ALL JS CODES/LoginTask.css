@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/amCLzhu9mjrNhNIb8a9Vs-transformed.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#parent{
+    /* border: 1px solid; */
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(101, 99, 99);
+    border-radius: 20px;
+}
+#ch1{
+    height: 100%;
+    width: 40%;
+    background-color: #ffffff;
+    /* border: 1px solid; */
+    border-radius: 20px 0px 0px 20px;
+}
+#ch2{
+    height: 100%;
+    width: 60%;
+    /* border: 1px solid; */
+    background-image: url(./images/Online_Registration_Illustration_vector_concept_generated.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #ffffff;
+}
+#ch1-ch1{
+    height: 75%;
+    width: 90%;
+    margin-top: 60px;
+    margin-left: 31px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px rgba(101, 99, 99, 0.37);
+    display: flex;
+    flex-direction: column;
+    /* background-image: url(./images/amCLzhu9mjrNhNIb8a9Vs-transformed.jpeg); */
+    background-position: center;
+    
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#input1,#input2{
+    height: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+#ltext{
+    margin-top: -10px;
+}
+#time{
+    align-self:flex-end;
+    margin-right: 20px;
+}

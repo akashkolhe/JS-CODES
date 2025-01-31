@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+    
+    <button onclick="demo()">CREATE</button>
+    <script>
+        function demo() {
+            let ele=document.getElementById('box');
+            ele.style.height=prompt("enter height");
+            ele.style.width=prompt("enter width");
+            ele.style.backgroundColor=prompt("enter color");
+            ele.style.borderRadius=prompt("enter radius");
+            ele.style.margin=prompt("enter margin");
+            ele.style.marginTop=prompt("top");
+            
+
+            
+        }
+
+        //PARAMETERIZED FUNCTION
+        function fun(a,b) {
+        return a+b;
+            
+        }
+        console.log(fun(10,2));
+
+        (function(a,b){
+            console.log(a+b);
+        }(10,20))
+
+        
+    </script>
+</body>
+</html>

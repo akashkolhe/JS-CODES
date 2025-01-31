@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //if
+        var a = 10;
+        if (a > 5) {
+            console.log("this is if block");
+        }
+        console.log("outside of if block");
+
+        //if else
+        if (a < 5) {
+            console.log("Welcome to if block");
+        } else {
+            console.log("welcome to else block");
+        }
+
+        //else if
+        if (true) {
+            console.log("true condition");
+        }
+        else if (false) {
+            console.log("false conditon");
+        }
+        else {
+            console.log("alternative option");
+        }
+
+        //switch
+        //0=cricket
+        //1=hockey
+        //2=football
+        //3=baseball
+
+        var game = 1;
+
+        switch (game) {
+            case 0:
+                console.log("bat");
+            case 4:
+                console.log("ball");
+            case 8:
+                console.log('stump');
+                break;
+
+
+            case 1:
+                console.log("hockey stick");
+            case 5:
+                console.log('member of hockey');
+                break;
+
+
+            case 2:
+                console.log("football net");
+                break;
+
+
+            case 3:
+                console.log('baseball');
+           
+            default:
+                console.log("no game");
+
+                break;
+        }
+    </script>
+
+</body>
+
+</html>

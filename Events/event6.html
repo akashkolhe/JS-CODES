@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="date()">DISPLAY DATE</button>
+    <p id="print"></p>
+    <script>
+        function date() {
+            let date=new date()
+            let ele=document.getElementById("print")
+            // ele.innerHTML=Date();
+            // ele.style.color="red"
+            ele.innerHTML="TODAYS DATE IS :"+date.getDate();
+            ele.innerHTML="year is"+date.getFullYear();
+            ele.innerHTML=date.getMonth();
+
+        }
+
+
+    </script>
+</body>
+</html>

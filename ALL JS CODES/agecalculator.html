@@ -1,0 +1,40 @@
+<!-- 1) AGE CALCULATOR -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1 style="color:aquamarine" align:center>CalculateageFromDateOfBirth <br><br></h1>
+    <br>
+    <label for="">Enter date of Birth</label>
+    <input type="datetime" name="" id="DOB">
+    <button type="submit" onclick="Age()"> calculate Age</button>
+    <h3 style="color: blue" id="result" align:center></h3>
+    <script>
+        function Age(){
+            var userip=document.getElementById("DOB").value;
+            var dob=new Date(userip)
+            if( userip=null|| userip==""){
+                document.getElementById("massage").innerHTML="choose date please";
+                return false;
+            }
+            else{
+                // pareseInt pareseInt parserInt
+                var mdate=userip.toString();
+                var dobY=parserInt(mdate.subString(0,4),10);
+                var dobM=parserInt(mdate.subString(5,7),10);
+                var dobD=parserInt(mdate.subString(8,6),10);
+
+                var today=new Date();
+                var birthday=new Date();
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cricket=new Object()
+        cricket.player="sachin sir"
+        cricket.cen="100"
+        cricket.runs=48000
+        console.log(cricket);
+        cricket.t20={
+            totalMatches:5,
+            cen:1,
+        }
+        cricket.test={
+            totalMatches:200,
+            cen:51,
+        }
+       // console.log(cricket);
+        console.log(cricket.t20);
+        console.log(cricket.t20.cen=2);
+        let emp=function name(ename,sal,empid){
+            this.ename=ename;
+            this.sal=sal;
+            this.empid=empid;
+        }
+        let emp1=new emp("akash",33000,"infy123")
+        console.log(emp1);
+        let emp2=new emp("ram",34000,"infy1234")
+        console.log(emp2);
+        console.log(emp2.ename);
+        // emp2.sal=15000;
+        console.log(emp2);
+
+    
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let obj = {
+            name: "abc",
+            age: 34
+        }
+        //seal method which is used to modify the key value pair but we
+        //cant add new kay and value pair
+        console.log(Object.seal(obj));
+        obj.prof = "engg"
+        console.log(obj);
+        console.log(obj.name = "xyz");
+        console.log(obj);
+        //entries it is used to convert object into an array
+        console.log(Object.entries(obj));
+        console.log(typeof obj);
+    </script>
+</body>
+
+</html>

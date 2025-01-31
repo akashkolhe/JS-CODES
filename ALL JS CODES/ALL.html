@@ -1,0 +1,1899 @@
+1) AGE CALCULATOR
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1 style="color:aquamarine" align="center">CalculateageFromDateOfBirth <br><br></h1>
+    <br>
+    <label for="">Enter date of Birth</label>
+    <input type="datetime" name="" id="DOB">
+    <button type="submit" onclick="Age()"> calculate Age</button>
+    <h3 style="color: blue" id="result" align="center"></h3>
+    <script>
+        function Age() {
+            var userip = document.getElementById("DOB").value;
+            var dob = new Date(userip)
+            if (userip = null || userip == "") {
+                document.getElementById("massage").innerHTML = "choose date please";
+                return false;
+            }
+            else {
+                var mdate = userip.toString();
+                var dobY = pareseInt(mdate.subString(0, 4), 10);
+                var dobM = pareseInt(mdate.subString(5, 7), 10);
+                var dobD = pareseInt(mdate.subString(8, 6), 10);
+
+                var today = new Date();
+                var birthday = new date
+            }
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+
+2)MATH
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let pi = Math.PI
+        console.log(pi);
+        let pow = Math.pow(5, 2)
+        console.log(pow);
+        let sqrt = Math.sqrt(32)
+        console.log(sqrt);
+        let floor = Math.floor(12.46);
+        console.log(floor);
+        let ceil = Math.ceil(12.46)
+        console.log(ceil);
+        let max = Math.max(1, 5, 148, 852, 58545, 2)
+        console.log(max);
+        let min = Math.min(1, 5, 148, 852, 58545, 2)
+        console.log(min);
+
+        let round = Math.round(12.56)
+        console.log(round);
+
+        let random = Math.random()
+        console.log(random);
+
+
+    </script>
+</body>
+
+</html>
+
+3}ANONYMOUS
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ANONYMOUS FUNCTION
+        var an = function () {
+            console.log("THIS IS ANONYMOUS FUNCTION");
+        }(10, 20)
+
+        // parameterized function
+        function demo(a, b) {
+            console.log(a + b);
+        }
+        demo(10, "ruchitababy")
+    </script>
+</body>
+
+</html>
+
+
+4)ARR1
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = [{ arr: [10, 20, 30] }, "sachin", false]
+        console.log(arr1[0].arr[0]);
+
+
+
+
+        // console.log(typeof arr1);
+        console.log(arr1[0].arr[2]);
+    </script>
+</body>
+
+</html>
+
+
+5)ARR2
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let arr=[10,"string",true,{name:"bhajji",age:47,player:["yuraj"]}]
+        // console.log(typeof arr[4]);
+        // arr[5]="update value"
+        // console.log(arr[5]);
+        // console.log(arr[3].age);
+        // arr[3].name="sachin"
+        // console.log(arr);
+        // console.log(arr[3].player[0]);
+
+
+        // BY USING NEW KEYWORD
+        // let arr1=new Array(10,"string",false)
+        // console.log(arr1[2]);
+        // arr1[6]={name:"jay"}
+        // console.log(arr1);
+
+
+
+        let arr = [10, ["2d array", ["3d index0", "3d index1"]]]
+        console.log(arr[1][0]);
+        console.log(arr[1][1][0]);
+        console.log(arr[1][1][1]);
+        arr[1][1][1] = { name: "update value", type: "object" }
+        console.log(arr);
+        console.log(arr[1][1][1].type);
+        console.log(typeof arr);
+    </script>
+</body>
+
+</html>
+
+6)ARRAY
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Array
+        // BY USING LITERAL
+        let arr = ["string", 10, true]
+        console.log(arr);
+        console.log(arr[0]);
+        console.log(typeof arr[1]);
+        arr[3] = "update value"
+        console.log(arr);
+        arr[2] = "replace"
+        console.log(arr);
+        arr[4] = { name: "chhagan", wife: "kokilabai" }
+        console.log(arr);
+        arr[4].name = "jaganmohan reddy"
+        console.log(arr);
+    </script>
+</body>
+
+</html>
+
+
+7)ARRAYMETHOD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [10, 20, 30, 40, 50, 60, 70, 80]
+        // push():IT IS USED TO ADD AN ELEMENT FROM LAST INDEX WE CAN ADD MULTIPLE ELEMENTS.
+        // console.log(arr.push("string", false));
+        // console.log(arr);
+
+        // pop():IT IS USED TO DELETE AN ELEMENT FROM LAST INDEX. WE CANNOT DELETE  MORE THAN ONE ELEMENT SIMUTANEOUSLY.
+        // console.log(arr.pop());
+
+        // shift():IT IS USEXD TO DELETE AN ELEMENT FROM START INDEX WE CANNOT DELETE MORE TRHAN ONE ELEMENT SIMUTANEOUSLY.
+        // console.log(arr.shift());
+
+        //    unshift():IT IS USED TO  ADD THE MULTIPLE ELEMENT FROM START INDEX AND WHICH CAN REFLECT YOU TO UPDATED LENGTH OF AN ARRAYS.
+        //    console.log(arr.unshift());
+
+        // console.log(arr.unshift("string",false));
+        // console.log(arr);
+
+        // includes():IT IS USED TO CHECK THE ELEMENT WEATHER  IT IS PRESENT OR NOT .IF YES MEANS IT WILL RETUREN US TRUE ,IF NO MEANS FALSE
+        // console.log(arr.include(50));
+
+        // indexof():IT IS USED TO CHECK THE INDEX OF AN ELEMENT
+        // console.log(arr.indexOf(30));
+        // let sort1 =["apple",10,20,30,"banana","chapple"]
+        // console.log(sort1.sort());
+
+        // sort():IT IS USED TO  SORT THE ELEMENT IN A DECENDING ORDER
+        // reversed()
+        // console.log(arr.reverse());
+
+        // length
+        // console.log(arr.length );
+        // let travel=["mumbaito goa" ,"pune to manali"]
+        // console.log(travel.replaced("mumbai","banglor"));
+
+        // slice():IT IS USED TO SPLIT THE ARRAY INTO FRAGMENTS.ARRAY
+        // console.log(arr.slice(2,6));
+
+        // splice():
+        console.log(arr);
+        console.log(arr.splice(0, 3, 400));
+        console.log(arr);
+    </script>
+</body>
+
+</html>
+
+
+
+8)ARROW
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ARROW FUNCTION
+        //    let arr=(a,b)=>{
+        //     console.log("arrow fun");
+        //     console.log(a+b);
+        //    }
+        //    arr(10,20)
+
+
+        // IIFE:
+        (function () {
+            console.log("this is iife");
+        }())
+    </script>
+</body>
+
+</html>
+
+
+
+9)CALLSTACK
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //debugger
+        console.log("start");
+        function fun1() {
+            console.log("SUPER PARENT FUN");
+            function fun2() {
+                console.log("NESTED FUNCTION");
+                function fun3() {
+                    console.log("SUPER NESTED FUN");
+                }
+                fun3();
+            }
+            fun2();
+        }
+        fun1();
+    </script>
+</body>
+
+</html>
+
+
+10)DATATYPE
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATATYPES</title>
+</head>
+
+<body>
+    <script>
+        //DATATYPES
+        //NUMBER DATATYPES
+        let a = 1;
+        console.log(a);
+        console.log(typeof a);
+
+        //STRING DATATYPES
+        console.log("string datatype");
+        let str = "hey"
+        let str1 = `hello`
+        let str2 = `july`
+        console.log(typeof str);
+        console.log(typeof str1);
+        console.log(typeof str2);
+
+        //boolean datatypes
+        let b = true;
+        console.log(typeof b);
+
+        //NULL
+        let c = null;
+        console.log(typeof c);
+
+        //undefined datatype
+        let un;
+        console.log(typeof un);
+
+    </script>
+</body>
+
+</html>
+
+11)DATE
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+</head>
+
+<body>
+    <script>
+        let date = new Date()
+        console.log(date);
+        let date1 = new Date(2002, 3, 16, 5, 12, 56, 1750)
+        console.log(date1);
+        console.log(date1);
+        console.log(date1.getDate());
+        console.log(date1.getDay());
+        console.log(date1.getFullYear());
+        console.log(date1.getMonth());
+        console.log(date1.getMilliseconds());
+        console.log(date1.getSeconds());
+        console.log(date1.getTimezoneOffset());
+        console.log(date1.getTime());
+        console.log(date1.getUTCFullYear());
+        console.log(date1.getUTCDate());
+        console.log(date1.getUTCMonth());
+    </script>
+</body>
+
+</html>
+
+
+12)DECISION
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // if (true)
+        // {
+        //     console.log("hey this is block");
+        // }
+        // console.log("hii i am  from outside of if block");
+
+        // if (false)
+        // {
+        //     console.log("false condition");
+
+        // }
+        // else{
+        //     console.log("this is else block");
+        // }
+
+        if (false) {
+            console.log("sugar conditon food");
+        }
+        else if (true) {
+            console.log("sugar free food");
+        }
+    </script>
+</body>
+
+</html>
+
+
+13)DOM
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action=""></form>
+    <img src="" alt="">
+    <a href=""></a>
+    <a href=""></a>
+    <script>
+        console.log(document.doctype);
+        console.log(document.title);
+        document.title = "facebook"
+        console.log(document.title);
+        console.log(document.forms);
+        console.log(document.images);
+        console.log(document.link);
+        console.log(window.screen);
+        console.log(document.styleSheets);//1
+        console.log(document.baseURI);
+        console.log(document.URL);
+        console.log(document.head);
+    </script>
+</body>
+
+</html>
+
+
+14)DOM2
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="box"></div> -->
+    <div id="box"></div>
+    <script>
+        // let ele=document.getElementById("box")
+        // ele.style.height=prompt("write the height")
+        // ele.style.width=prompt("write the width")
+        // ele.style.backgroundColor=prompt("write the bc")
+        // ele.style.borderRadius=prompt("write the br")
+
+
+
+        let ele = document.getElementById("box")
+        ele.style.height = "200px"
+        ele.style.width = "200px"
+        ele.style.backgroundColor = "blue"
+        ele.style.borderRadius = "20%"
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+15)DOM3
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <script>
+        let ele=document.getElementsByClassName("box")
+        ele[1].style.backgroundColor="hotpink"
+        ele[1].style.height="300px"
+        ele[1].style.width="300px"
+        ele[2].style.backgroundColor="darkblue"
+        ele[2].style.height="300px"
+        ele[2].style.width="300px"
+        ele[0].style.backgroundColor="yellow"
+        ele[0].style.height="300px"
+        ele[0].style.width="300px"
+        ele[1].style.margin="0 auto"
+    </script> -->
+
+
+
+
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <button onclick="box1()">BOX1</button>
+    <button onclick="box2()">BOX2</button>
+    <button onclick="box3()">BOX3</button>
+    <script>
+
+        let ele = document.getElementsByClassName("box")
+        function box1() {
+            ele[0].style.backgroundColor = "gray"
+            ele[0].style.height = "300px"
+            ele[0].style.width = "300px"
+        }
+        function box2() {
+            ele[1].style.backgroundColor = "red"
+            ele[1].style.height = "300px"
+            ele[1].style.width = "300px"
+
+            ele[1].style.margin = "0 auto"
+        }
+        function box3() {
+            ele[2].style.backgroundColor = "green"
+            ele[2].style.height = "300px"
+            ele[2].style.width = "300px"
+
+        }
+
+
+    </script>
+</body>
+
+</html>
+
+
+16)DOM4
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box" id="box1">BOX1</div>
+    <div class="box" id="box2">BOX2</div>
+    <div class="box" id="box3">BOX3</div>
+    <div class="box" id="box4">BOX4</div>
+    <script>
+        let ele1 = document.getElementsByClassName("box")
+        ele1[3].style.height = "200px"
+        ele1[3].style.width = "200px"
+        ele1[3].style.backgroundColor = "blue"
+    </script>
+</body>
+
+</html>
+
+
+17)EVENT
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button onclick="demo()">ACTION</button>
+    <script>
+        function demo() {
+            let ele = document.getElementById("box")
+            ele.style.height = "200px"
+            ele.style.width = "200px"
+            ele.style.backgroundColor = "blue"
+        }
+    </script>
+</body>
+
+</html>
+
+
+18)EVENT2
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" onmouseover="onMouseover()" onmouseOut=" onMouseOut()"></div>
+    <script>
+        function onMouseover() {
+            let ele = document.getElementById("box")
+            ele.style.height = "200px"
+            ele.style.width = "200px"
+            ele.style.backgroundColor = "yellow"
+            ele.style.borderRadius = "50%"
+        }
+        function onMouseOut() {
+            let ele = document.getElementById("box")
+            ele.style.height = "200px"
+            ele.style.width = "200px"
+            ele.style.backgroundColor = "blue"
+            ele.style.borderRadius = "50%"
+
+        }
+    </script>
+</body>
+
+</html>
+
+
+19)EVENT3
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="mycar" onchange="change()">
+        <option value="audi">AUDI</option>
+        <option value="mercedes">MARCEDES</option>
+        <option value="rollsroyce">ROLLSROYCE</option>
+
+        <option value="lambo">LAMBO</option>
+    </select>
+    <p id="print"></p>
+    <script>
+        function change() {
+            let vehicle = document.getElementById(mycar).value;
+            let sel = document.getElementById("print");
+            sel.innerHTML = "Selected car is :" + vehicle;
+            sel.style.color = "red"
+        }
+    </script>
+</body>
+
+</html>
+
+
+20)EVENT4
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="date()">DISPLAY DATE</button>
+    <p id="print"></p>
+    <script>
+        function date() {
+            let date = new Date()
+            let ele = document.getElementById("print")
+            // ele.innerHTML=Date();
+            ele.style.color = "blue"
+            // ele.innerHTML="Todays Date IS :"+date.getDate();
+            // ele.innerHTML="YEAR IS :"+date.getFullYear()
+            ele.innerHTML = "current year is:" + date.getFullYear()
+
+        }
+    </script>
+</body>
+
+</html>
+
+21)EVENT5
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" onmouseover="getOver()" onmouseout="getback()"></div>
+    <script>
+        function getOver() {
+            let box = document.getElementById("box")
+            box.style.height = "300px"
+            box.style.width = "300px"
+            box.style.backgroundColor = "yellow";
+        }
+        function getback() {
+            let box1 = document.getElementById("box")
+            box.style.height = "300px"
+            box.style.width = "300px"
+            box.style.backgroundColor = "pink";
+        }
+
+    </script>
+</body>
+
+</html>
+
+22)EVENT6
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="myfun()">
+        <input type="text">
+        <br>
+        <input type="submit" value="SUBMIT">
+        <input type="reset" value="RESET" on="clear()">
+        <script>
+            function myfun() {
+                alert("YOUR FORM HAS BEEN SUBMITTED")
+            }
+            function clear() {
+                alert("YPOUR FORM HAS BEEN CLEAR")
+            }
+        </script>
+    </form>
+</body>
+
+</html>
+
+
+23)EVENT7
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" onsubmit="myfun()">
+        <input type="text" id="in1">
+        <br>
+        <input type="submit" value="SUBMIT">
+        <script>
+            function myfun() {
+                let inp1 = document.getElementById("in1").value;
+                if (inp1 == "Ruchita") {
+                    alert("TAKLELI MAHITI BAROBAR AAHE ")
+                }
+                else {
+                    alert("MAHITI NIT TAK")
+                }
+            }
+        </script>
+    </form>
+</body>
+
+</html>
+
+24)EVENT8
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="print"></p>
+    <button ondblclick="getDouble()">DOUBLE CLICK</button>
+    <script>
+        function getDouble() {
+            let doubl = document.getElementById("print")
+            doubl.innerHTML = "THIS IS DOUBLE CLICK EVENT LISTNER"
+            doubl.style.color = "blue"
+        }
+    </script>
+</body>
+
+</html>
+
+
+25)EVENT9
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="in1" oncopy="getCopy()">
+    <p id="print"></p>
+    <script>
+        function getCopy() {
+            let copy1 = document.getElementById("in1")
+            let pri = document.getElementById("print")
+            pri.innerHTML = "YOUR TEXT IS COPIED!!!!"
+        }
+    </script>
+</body>
+
+</html>
+
+26)EVENT10
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="in1" type="text" placeholder="PASTE HERE SOMETHING" onPaste="getPaste()">
+    <P id="print"></P>
+    <script>
+        function getPaste() {
+            let past1 = document.getElementById("in1")
+            let prin1 = document.getElementById("print")
+            prin1.innerHTML = "YOUR TEXT  IS SUCCESSFULLY PASTED"
+        }
+    </script>
+</body>
+
+</html>
+
+27)EVENT11
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="in1" onblur="getBlur()">
+    <script>
+        function getBlur() {
+            let inp1 = document.getElementById("in1");
+            inp1.value = inp1.value.toUpperCase();
+            inp1.style.backgroundColor = "blue"
+            inp1.style.color = "white"
+        }
+    </script>
+</body>
+
+</html>
+
+28)EVENT12
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="in1" onfocus="getFocus(this)">
+    <script>
+        function getFocus(x) {
+            x = document.getElementById("in1")
+            x.style.backgroundColor = "blue"
+        }
+    </script>
+</body>
+
+</html>
+
+29)EVENT13
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="in1" onfocusout="getFocusOut()">
+    <script>
+        function getFocusOut(x) {
+            x = document.getElementById("in1")
+            x.style.backgroundColor = "blue"
+        }
+    </script>
+</body>
+
+</html>
+***************************************************
+30)EVENT14
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="in1" onfocusin="getFocusIn()">
+    <script>
+        function getFocusIn(x) {
+            x = document.getElementById("in1")
+            x.style.backgroundColor = "blue"
+        }
+    </script>
+</body>
+
+</html>
+
+31)EVENT15
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // FUNCTION DECLARATION
+        demo();//HOSTING THE FUNCTION: BEFORE ITS DECLARATION WE CAN CALLED
+        function demo() {
+            console.log("hey this is function expression");
+        }
+        // function call statement
+
+        //FUNCTION EXPRESSION
+        var fun = function demo1() {
+            console.log("THIS IS FUNCTION EXPRESSION");
+        }
+        console.log(fun());
+    </script>
+</body>
+
+</html>
+
+32)FUNCTION
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <h1>heading2</h1>
+    <h1>heading3</h1>
+    <h1></h1>
+    <script>
+        let head = document.getElementsByTagName("h1")
+        head[0].style.color = "blue"
+        head[0].innerHTML = "THIS IS getElemenyByTagName()"
+        head[3].style.color = "red"
+        head[3].innerHTML = "this is last heading"
+    </script>
+</body>
+
+</html>
+
+33)
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!---INTERNAL JS-->
+    <script>
+
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+34)INDEX
+var a=10;
+var b=20;
+console.log(a)
+console.log(b)
+
+
+35)OBJECT
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // OBJECT MOBILE 
+        // let mobile={
+        //     company:"APPLE",
+        //     make:"california",
+        //     price:14000,
+        // }
+        // console.log(typeof mobile);
+        // console.log(mobile.company);
+        // console.log( mobile.price);
+        // // update
+        // mobile.price=50000
+        // console.log(mobile);
+        // mobile.model="14pro"
+        // console.log(mobile);
+
+        // // BY USING NEW KEYWORD
+        // var human=new Object()
+
+        // human.name="Ruchita"
+        // human.husbandName="Sandesh"
+        // human.contact=12374
+        // console.log(human);
+        // human.name="Ruchita shende"
+        // console.log(human);
+
+        // var person=function name(name,age,sal)
+        //     { this.name=name,
+        //      this.age=age
+        //      this.sal=sal
+        //     }
+        //     var per=new person("suvarna",23,11000)
+        //     console.log(per);
+        //      console.log(per.name);
+        //     //  update existing key
+        //      per.name="komal shende"
+        //     console.log(per);
+        //     // adding new key and value pair 
+        //     per.prof="singer"
+        //     console.log(per);
+
+        let adv = {
+            adhar: {
+                name: "ranu mandal",
+                age: 55,
+            }
+        }
+        console.log(adv.adhar);
+        // update existing pair 
+        adv.adhar.name = "monica"
+        console.log(adv.adhar);
+        // adding new pair 
+        adv.adhar1 = {
+            name: "cr7",
+            wife: {
+                name: "gangubai",
+                age: 23
+            }
+        }
+        console.log(adv);
+        adv.adhar1.age = 36
+        console.log(adv.adhar1);
+        console.log(adv.adhar1.wife.name);
+
+
+
+
+    </script>
+</body>
+
+</html>
+
+
+36)OBJECT METHOD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let obj={name:"vicky"}
+        // add :it is used to add the new Element
+        // obj.age=23
+        // console.log(obj);
+        // delete:THIS METHOD USED TO DELETE AN ElEMENT
+        // delete obj.name
+        // console.log(obj);
+        // VALUSE:IT IS USED TO FETCH VALUE OF AN OBJECT 
+        // console.log(Object.value(obj));
+        // keys: IT IS USED TO FETCH KEYS OF OBJECT
+        // console.log(Object.keys(obj));
+        // entries:IT IS USED TO CONVERT OBJECT INTO AN ARRAYS
+        // console.log(Object.entries(obj));
+        // seal:IT IS USED TO RESTRICT  THE OBJECT,WE CANT ADD NEW ELEMENT BUT WE CASN MODIFY EXISTING ONE.
+        // console.log(Object. seal(obj));
+        // obj.prof="singer"
+        // console.log(obj);
+        // obj.name="jay"
+        // console.log(obj);
+        // freeze:IT IS USED TO FREEZE THE OBJECT,WWE CANT MODIFIED
+        // console.log(Oject.freeze(obj));
+        // obj.name="pawan"
+        // console.log(obj);
+        // assign :IT IS USED TO MERAGE THE OBJECT.
+        let mobile1 = { company: "samsung", price: 1200 }
+        let mobile2 = { make: "germany", rom: 128 }
+        console.log(Object.assign(mobile1, mobile2));
+    </script>
+</body>
+
+</html>
+
+
+37)OTP
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="otp()">OTP</button>
+    <script>
+        function otp() {
+            let ran = Math.random() * 10000
+            let roun = Math.round(ran)
+            console.log(roun);
+            // return roun;
+
+        }
+        // console.log(otp());
+
+    </script>
+</body>
+
+</html>
+
+38)SCOPE
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        debugger
+        // GLOBAL SCOPE
+        // var a=10;
+        // if( true){
+        // console.log(a);
+        //}
+        //BLOCK SCOPE VARIABLE
+        //if(true){
+        // let a=30;
+
+        //}
+        // console.log(c);
+
+        // CONST
+        if (true) {
+            const d = 10;
+            var a = "var variable"
+        }
+        //console.log(d);
+        console.log(a);
+    </script>
+</body>
+
+</html>
+
+
+39)STRING
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // by using literals
+        let str = "gangubai"
+        str[1] = "b"
+        // gbngubai
+        console.log(str);//gangubai
+
+        // BY USING new keyword
+        let str1 = new String("hello")
+        console.log(typeof str1);
+        console.log(str1);
+        str1 = "bye"
+        console.log(str1);
+
+        // single quote
+        let str3 = "hey i am single quote"
+        console.log(typeof str3);
+
+        // BACKTICK
+        let str4 = "hi i am backtick"
+        console.log(typeof str4);
+
+        // string methods
+        // lenght:it is used to check the lenght of string.
+        let str5 = "lenght";
+        console.log(str5.lenght);
+
+        // toUpperCase :it is used to turn string lowercase to uppercase
+
+        let str6 = "uppercase"
+        console.log(str6.toUpperCase());
+
+        // toLowerCase:it is used to turn string uppercase to lowercase
+        let str7 = "LOWERCASE"
+        console.log(str7.toLowerCase());
+
+        // slice(st.index,last index):it is used to splits the string into multiple fragments.
+        let str8 = "java script"
+        // console.log(str8.lenght);
+        console.log(str8.slice(2, 6));
+        console.log(str8.slice(-4));
+
+        // concat()
+        let str9 = "string1"
+        let str10 = "string2"
+        console.log(str9 + str10);
+        console.log(str9.concat(str10));
+
+        // charAt(index):it is used to check which character is present at perticular index.
+        let str11 = "charAt"
+        console.log(str11.charAt(2));
+
+        // charAtCode():it is used to turn the specific character into ascii value
+        let str12 = "charCodeAt"
+        console.log(str12.charCodeAt(2));
+
+        // repeate():it is used to repeat the string
+        let str13 = "repeat"
+        console.log(str13.repeat(5));
+        console.log(str13[2].repeat(5));
+
+        //    replace
+        let str14 = "mumbai to pune"
+        console.log(str14.replace("mumbai", "goa"));
+        console.log(str14);
+
+        //  startwith()
+        let str15 = "startwith"
+        console.log(str15.startsWith("S"));
+        console.log(str15.startsWith("s"));
+
+        // endwith():it is used to check wether the index ends with specific index(value) or not ,if yes means it will returen us true or else false
+        let str16 = "endswith"
+        console.log(str16.endsWith("s"));//false
+
+        //    indexOf():it is used to check the index. 
+        let str17 = "indexof"
+        console.log(str17.indexOf("e"));//3
+
+        // includes():it is used to check the value is present or not 
+        let str18 = "includes"
+        console.log(str18.includes("a"));//false
+
+        //  substr()
+        let str19 = "substring"
+        console.log(str19.substring(2, 6));
+        console.log(str19.substring(-4));// not accepting negetive integer
+
+        // splits():
+        // let str20="spl its"
+        // let str21="komal  gauri"
+        // console.log(str20.split());//spl its
+        // console.log(str21.split());//komal gauri
+
+        let str20 = "splits"
+        let str21 = "komal  gauri"
+        console.log(str20.split(""));
+        console.log(str21.split(" "));
+
+        //  trim()
+        let str22 = " trim "
+        console.log(str22);
+        console.log(str22.length);
+        console.log(str22.trim());
+        console.log(str22.trimEnd());
+        console.log(str22.trimStart());
+
+
+    </script>
+</body>
+
+</html>
+
+
+40)SWITCH
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        switch (6) {
+            case 1:
+                console.log("msd");
+            case 2:
+                console.log("vk");
+            case 3:
+                console.log("kapil dev");
+            case 4:
+                console.log("R7");
+            case 5:
+                console.log("messi");
+                break
+            default:
+                console.log("ABHIJEET IS CHAPPRI DEVELOPER");
+                break;
+        }
+    </script>
+</body>
+
+</html>
+
+
+41)TASK
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bulb"></div>
+    <button onclick="add()">RED</button>
+    <button onclick="rem()">YELLOW</button>
+    <script>
+        var a = 1;
+        function add() {
+            document.getElementById("bulb").style.backgroundColor = "red"
+            //console.log(a++);
+        }
+        function rem() {
+            document.getElementById("bulb").style.backgroundColor = "yellow"
+            // console.log(a--);
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+42)TASK3
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="box"></h1>
+    <button onclick="india()">INDIAN TEAM</button>
+    <script>
+        function india() {
+            let ind = ["sachin", "ganguly", { name: "sehwagh", age: 45, centries: 40 }, "balaji", "kumbale"]
+            document.getElementById("box").innerHTML = document.write(ind[2].name);
+        }
+
+
+    </script>
+</body>
+
+</html>
+
+
+43)TASK4
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bulb"></div>
+    <button onclick="fun()">CHANGE THE COLOR</button>
+    <script>
+        function fun() {
+            let ele = document.getElementById("bulb")
+            ele.style.backgroundColor = prompt("write your input")
+        }
+    </script>
+</body>
+
+</html>
+
+44)TASK5
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  window.prompt("write your age")
+        //  var a=age;
+        //  if(age==18){
+        //  console.log("your are eligible for voting");
+        // }
+        // else if(age>=18){
+        //     console.log("your are eligible for voting");
+        // }
+        // else{
+        //     window.alert("you are not eligible for voting")
+        // }
+
+
+
+
+
+
+
+
+        let age = prompt("how old you are?");
+        if (age >= 18) {
+            window.alert("welcome to voting")
+            document.write("welcome to voting");
+            let ward = ["abc", "xyz", "bcd"]
+            document.writeln(ward[Number(prompt("enter your ward number"))])
+        }
+        else {
+            window.alert("goto home and watch")
+        }
+    </script>
+</body>
+
+</html>
+********************************************
+45)TASK6
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">ENTER YOUR FIRST DIGIT</label>
+    <input type="text" id="in1">
+    <br>
+    <label for="">ENTER YOUR SECOND DIGIT</label>
+    <input type="text" id="in2">
+    <br>
+    <p id="print"></p>
+    <p id="printS"></p>
+    <p id="printM"></p>
+    <p id="printD"></p>
+    <button onclick="getAdd()">ADDITION</button>
+    <button onclick="getsub()">SUBSTRACTION</button>
+    <button onclick="getMul()">MULTIPLICATION</button>
+    <button onclick="getDiv()">DIVSION</button>
+    <script>
+        function getAdd() {
+            let num1 = Number(document.getElementById("in1").value);
+            let num2 = Number(document.getElementById("in2").value);
+
+            let add = num1 + num2
+            console.log(add);
+            let pri = document.getElementById("print")
+            pri.innerHTML = "Addition is:" + add
+            pri.style.color = "blue"
+        }
+        function getsub() {
+            let num1 = Number(document.getElementById("in1").value);
+            let num2 = Number(document.getElementById("in2").value);
+
+            let sub = num1 - num2
+            console.log(sub);
+            let pri1 = document.getElementById("printS")
+            pri1.innerHTML = "Substraction is:" + sub
+            pri1.style.color = "blue"
+        }
+        function getMul() {
+            let num1 = Number(document.getElementById("in1").value);
+            let num2 = Number(document.getElementById("in2").value);
+
+            let Mul = num1 * num2
+            console.log(Mul);
+            let pri2 = document.getElementById("printM")
+            pri2.innerHTML = "Multiplication is:" + Mul
+            pri2.style.color = "blue"
+        }
+        function getDiv() {
+            let num1 = Number(document.getElementById("in1").value);
+            let num2 = Number(document.getElementById("in2").value);
+
+            let Div = num1 / num2
+            console.log(Div);
+            let pri3 = document.getElementById("printD")
+            pri3.innerHTML = "Divsion is:" + Div
+            pri3.style.color = "blue"
+        }
+    </script>
+</body>
+
+</html>
+
+
+46)TASK7
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <br>
+        <label for="">FIRST NAME</label><br>
+        <input type="text" placeholder="YOUR NAME...">
+        <br><br>
+        <label for="">LAST NAME</label><br>
+        <input type="text" placeholder="YOUR LAST NAME">
+        <br><br>
+        <label for="">COUNTRY</label>
+        <select name="" id="mycountry" onchange="change()">
+            <option value="usa">USA</option>
+            <option value="china">CHINA</option>
+            <option value="india">IND</option>
+        </select>
+        <p id="print"></p>
+        <script>
+            function change() {
+                let country = document.getElementById(mycountry).value;
+                let sel = document.getElementById("print");
+                sel.innerHTML = "Selected country is :" + country;
+
+            }
+            function myfun() {
+                alert("your form has been submitted")
+            }
+        </script>
+
+        <form action="" onsubmit="myfun()">
+            <input type="submit" value="SUBMIT">
+        </form>
+</body>
+
+</html>
+
+47)TYPECAST
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //TYPECASTING
+        //impicite typecasting done by interpreter automatically
+        // let a="str"
+        //let b=10;
+        // console.log(typeof a+b);
+        //console.log(typeof "a"+5);
+        // console.log(typeof "5"+5);
+        // console.log(typeof 5+5);
+        // console.log(true+1);
+
+
+        //EXPLICITE TYPECASTING
+        console.log(Boolean(1) + 1);
+        console.log(typeof Number("5") + 5);
+        console.log(String(5) + 5);
+        console.log(Number("a") - 5);
+        console.log(Number(false) + 2);
+        console.log(Boolean("1") + 2);
+        console.log(String(false) + 2);
+        console.log(String(true) + true);
+    </script>
+
+
+</body>
+
+</html>
+
+48)VARIABLE
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //VARIABLE TYPES - VAR , LET, CONST
+        //SYMTAX OF VARIABLE : VAR VARVARIABLE_NAME =VALUE
+        //VAR VARIABLE
+        //DECLARATION AND INITIALIZATION
+        var a = 10;
+        console.log(a);
+        //REDECLARATION IS POSSIBLE
+        var a = "string"
+        console.log(a);
+        var a = true
+        console.log(a);
+        //RE-INITIALIZATION IS POSSIBLE
+        a = false
+        console.log(a);
+        //HOISTING(first the variable  inistializing then variable declaration then print variable is known hoisting)
+        //(re-initializing, re-declaration, hoisting is possible in VAR)
+        b = "string2"
+        var b
+        console.log(b);
+
+
+
+
+        //2. LET VARIABLE
+        let c = 10;
+        console.log(c);
+        //REDECLARATION IS NOT POSSIBLE IN LET VARIABLE
+        // let c=10;
+        // console.log(c);
+        //RE-INITIALIZATION IS POSSIBLE IN LET VARIABLE 
+        c = 20;
+        console.log(c);
+
+        //HOISTING
+        // d="hoisting"
+        // let d;
+        // console.log(d);
+        //hoisting is not possible in let variable 
+
+        let d = "str"
+        console.log(d);//REDECLARATION
+
+
+
+
+
+        //3. CONST VARIABLE
+        const str = "const variable"
+        console.log(str);
+        //redeclaration is not possible in const variable
+        //const str=10
+
+
+        //re-initialization is not possible in const variable 
+        str = "updated const"
+        console.log(str);
+
+        //hoisting and declaration is not possible in const variable
+
+        // hoist="hoisting"
+        // const hoist;
+        // console.log(hoist);
+
+    </script>
+</body>
+
+</html>
+
+49)WINDOW
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        window.prompt("write your input");
+        window.confirm("are you18+?")
+        window.alert("your antivirus is going to expaired")
+    </script>
+</body>
+
+</html>

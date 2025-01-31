@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //scope of the variable
+        //VAR
+        var a=10;
+        function demo(){
+            console.log(a);
+        }
+        console.log(demo());
+
+        //let BLOCK SCOPE VARIABLE
+        // if (true) 
+        // {
+        //     let block=20;
+        //     console.log(block);
+            
+        // }
+
+        if (true) {
+            const bl=10;
+            
+        }  //here cant acces outside the block
+        console.log(bl);
+    </script>
+    
+</body>
+</html>

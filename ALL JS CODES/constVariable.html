@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //REDECLARATION IS NOT POSSIBLE
+        const a=10;
+        console.log(a);
+       // const a=20;
+       // console.log(a);//Uncaught SyntaxError: Identifier 'a' has already been declared
+
+       //REINITIALIZATION IS NOT POSSIBLE
+       const b=25;
+       console.log(b);
+      // b=true;
+      // console.log(b);//constVariable.html:20 Uncaught TypeError: Assignment to constant variable.
+
+
+      //BLOCK SCOPE VARIABLE OUTSIDE OF BOX IT IS NOT USED
+      if (true) {
+        const c="block scope";
+        
+      }
+      //console.log(c); 
+
+      //HOISTING IS NOT POSSIBLE
+    //   d=25;
+    //   const d;
+    //   console.log(d);
+
+    </script>
+</body>
+</html>

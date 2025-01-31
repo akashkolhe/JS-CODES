@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="car" onchange="car()">
+        <option value="LAMBORGINI">LABORGINI</option>
+        <option value="MERCEDES">MERCEDES</option>
+        <option value="ROLLS ROYCE">ROLLS ROYCE</option>
+        <option value="AUDI">AUDI</option>
+        </select>
+        <button onclick="car()">change the color</button>
+        <h1 id="demo"></h1>
+        <div id="bi"></div>
+        <script>
+            function car(){
+                let ele=document.getElementById("car").value
+                document.getElementById("demo").innerHTML=ele + " is your dream car"
+                document.getElementById("bi").style.backgroundColor="yellow"
+                document.getElementById("bi").style.height="200px"
+                document.getElementById("bi").style.width="200px"
+
+            }
+        </script>
+
+    </select>
+
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONBLUR()</title>
+</head>
+<body>
+    <input type="text" name="" id="inp" onblur="getBlur()"><br>
+    <input type="text" id="inp1" onfocusout="getFocusOut()">
+    
+    <script>
+        function getBlur(){
+            let ele=document.getElementById("inp");
+            ele.value= ele.value.toUpperCase();
+        }
+        function getFocusOut(){
+            let ele=document.getElementById("inp1");
+            ele.value= ele.value.toLowerCase();
+        }
+    </script>
+</body>
+</html>

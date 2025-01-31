@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- By using getELementById
+    1.
+    
+    <div id="box">BOX1</div>
+    <button onclick="getPerform()">CREATE</button>
+
+    <script>
+        function getPerform() {
+            let ele=document.getElementById("box");
+            ele.style.height=prompt("Enter Height");
+            ele.style.width=prompt("Enter Width");
+            ele.style.backgroundColor=prompt("Enter color");
+        } 
+    </script> -->
+
+
+    <!-- By using getElementByClassName 
+    2. 
+    <div class="head1">heading</div>
+    <div class="head1">heading</div>
+    <div class="head1">heading</div>
+    <div class="head1">heading</div>
+    <div class="head1">heading</div>
+    <script>
+        let ele=document.getElementsByClassName("head1");
+        ele[0].innerHTML="This is heading";
+        ele[0].style.color="red";
+    </script> -->
+
+    <!-- By using getElementByTagName  
+    3.
+        -->
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+
+    <script>
+        let ele=document.getElementsByTagName("h1");
+        ele[0].innerHTML="Heading 1";
+        ele[1].innerHTML="Heading 1";
+    </script>
+</body>
+</html>

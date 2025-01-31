@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+           text-align: center;
+           border-collapse: collapse;
+           width: 600px;
+           height: 300px;
+        }
+        table tr th{
+            background: rgb(49, 49, 49);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+   <table border="1px solid" >
+    <caption><h1>Type of variables </h1></caption>
+    <tr>
+        <th>Parameters</th>
+        <th>var(Global Scope)</th>
+        <th>let(Block Scope)</th>
+        <th>const(Block Scope)</th>
+    </tr>
+    <tr>
+        <th>Re-Declaration</th>
+        <td>✓</td>
+        <td>✕</td>
+        <td>✕</td>
+    </tr>
+    <tr>
+        <th>Re-Initialization</th>
+        <td>✓</td>
+        <td>✓</td>
+        <td>✕</td>
+    </tr>
+    <tr>
+        <th>Scope</th>
+        <td>Global</td>
+        <td>Block</td>
+        <td>Block</td>
+    </tr>
+    <tr>
+        <th>Hoisting</th>
+        <td>✓</td>
+        <td>✕</td>
+        <td>✕</td>
+    </tr>
+    <tr>
+        <th>Block Scope</th>
+        <td>✕</td>
+        <td>✓</td>
+        <td>✓</td>
+    </tr>
+   
+   </table>
+
+    <script>
+        // global scope variable
+        console.log("Global Scope");
+        // re-declaration is possible for global scope variable
+        var a=10;
+        var a=20;
+        console.log("re-declaration -"+a);
+
+        // re-initialization is possible for global scope variable 
+        var b=10;
+        b="global scope";
+        console.log("re-initialization -"+b);
+
+        // Hoisting is possible for global scope variable (before declaration we can assign value)
+        c=10;
+        var c;
+        console.log("hoisting -"+c);
+
+        // global scope  variable is not block level scope
+        if (true) {
+            var d="global variable";
+        }
+        console.log("not only for block level -"+d);
+        console.log("_______________________________________________________");
+
+
+        // block scope variable
+
+        console.log("Block Scope");
+        // re-declaration is not possible for block scope variable
+        let aa=10;
+        // let aa=20;
+        console.log("re-declaration is not possible -"+aa);
+
+        // re-initialization is possible for block scope variable 
+        let bb=10;
+        bb="block scope";
+        console.log("re-initialization is possible -"+bb);
+
+        // Hoisting is not possible for block scope variable (before declaration we can assign value)
+        // cc=10;
+        let cc;
+        cc=10;
+        console.log("Hoisting is not possible -"+cc);
+
+        // block scope variable is only block level scope
+        if (true) {
+            let dd="block variable";
+            console.log("block scope variable is only block level scope -"+dd);
+        }
+        // console.log(dd);
+        console.log("_______________________________________________________");
+
+
+        // cost variable
+    </script>
+</body>
+</html>

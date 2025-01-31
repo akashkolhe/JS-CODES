@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">NAME</label>
+    <input type="text" name="" placeholder="ENTER YOUR NAME" id="inp" onfocus="getFocus()" required>
+    <br>
+    <label for="">Email</label>
+    <input type="email" name="" id="email" placeholder="ENTER YOUR EMAIL" required>
+    <br>
+    <button type="submit" id="btn" onclick="validate()">SUBMIT</button>
+    <p id="pri"></p>
+    <script>
+        var ele=document.getElementById("inp");
+        var ele1=document.getElementById("email").value;
+        function getFocus(){
+            let ele=document.getElementById("inp");
+            ele.style.backgroundColor="red";
+        }
+        function validate(){
+            var ele1=document.getElementById("email").value;
+            if(ele1=="ab@gmail.com"){
+                window.alert("Email Is Verified!!!");
+                let pri=document.getElementById("pri");
+                pri.innerHTML="NAME IS"+ele.value+"<br><br>Email is:"+ele1.value;
+                
+            }
+            else{
+               window.alert("Please enter valid email id");
+            }
+            
+        }
+    
+    </script>
+</body>
+</html>

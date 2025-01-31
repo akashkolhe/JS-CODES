@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Task</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 3px solid rgb(0, 0, 0);
+            z-index: 2;
+        }
+        #c1{
+            background-color: rgba(255, 0, 0, 0.100);
+        }
+        #c2{
+            background-color: rgba(255, 166, 0, 0.100);
+        }
+        #c3{
+            background-color: rgba(0, 128, 0, 0.100);
+        }
+        #p{
+            border: 5px solid;
+            background-color: rgb(45, 45, 45);
+            position: relative;
+            margin: 0 auto;
+            top: 20%;
+            width: 150px;
+            height: 370px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+        button{
+            border: none;
+            color: rgba(255, 255, 255, 0.345);
+            padding: 0 30px;
+            font-weight: 900;
+            background-color: transparent;
+            outline: none;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="p">
+        <div id="c1" class="circle"></div>
+        <div id="c2" class="circle"></div>
+        <div id="c3" class="circle"></div>
+        <button onclick="run()">CLICK ME</button>
+    </div>
+    <script>
+        function run() {
+            let input=prompt("Start/Pause/Stop");
+            input=input.toLowerCase();
+            var body=document.getElementsByClassName("circle");
+            if (input==="start") {
+               body[2].style.background="#1fc71f";
+               body[0].style.background="rgba(255, 0, 0, 0.100)";
+               body[1].style.background="rgba(255, 166, 0, 0.100)";
+            }
+            else if(input==="pause"){
+                body[1].style.background="orange";
+                body[0].style.background="rgba(255, 0, 0, 0.100)";
+                body[2].style.background="rgba(255, 166, 0, 0.100)";
+            }
+            else if(input==="stop"){
+                body[0].style.background="red";
+                body[1].style.background="rgba(255, 166, 0, 0.100)";
+                body[2].style.background="rgba(0, 128, 0, 0.100)";
+            }
+        }
+    </script>
+</body>
+</html>

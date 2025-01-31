@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head1">hii this is line 1</h1>
+    <h1 class="head1">hii this is line 2</h1>
+    <h1 class="head1">hii this is line 3</h1>
+    <h1 class="head1">hii this is line 4</h1>
+    <h1 class="head1">hii this is line 5</h1>
+    <script>
+        let ele=document.getElementsByClassName("head1")
+        ele[2].innerHTML="this is heading 3"
+        ele[2].style.color="red"
+        ele[1].innerHTML="this line is changed"
+        ele[0].innerHTML="this is index 0"
+        ele[3].innerHTML="this line is changed again"
+        ele[4].innerHTML="hii finished"
+    </script>
+</body>
+</html>

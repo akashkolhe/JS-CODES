@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="getEmail()">
+        <label for="">Name:-</label>
+        <input type="text" name="" id="name"  onfocus="getFocus()">
+        <br><br>
+        <label for="">Email:-</label>
+        <input type="email" name="" id="email"  onfocus="getFocus1()">
+        <br><br>
+        <input type="submit" value="SUBMIT">
+       
+    </form>
+    <br>
+    <button onclick="getDetails()">GET DETAILS</button>
+    <p id="print" ></p>
+    <script>
+            var emailOriginal="example@123gmail.com";
+            var newEmail=document.getElementById("email").value;
+            var newname=document.getElementById("name").value;
+        function getDetails() {
+            let print=document.getElementById("print");
+            print.innerHTML="Name:- "+newname +"<br>Email:- "+newEmail;
+        }
+        function getEmail() {
+           
+            if(newEmail.length>0){
+                if (emailOriginal===newEmail &&newname.length>0) {
+                    window.alert("Login Successfully");
+                }
+                else if(newname==0){
+                    window.alert("Please Enter Name")
+                }
+                else{
+                window.alert("Incorrect Mail")
+            } 
+            }else{
+                window.alert("Please Enter Email")
+            }
+            
+           
+        }
+        function getFocus() {
+            document.getElementById("name").style.backgroundColor="red";
+        }
+        function getFocus1() {
+            document.getElementById("email").style.backgroundColor="red";
+        }
+    </script>
+</body>
+</html>

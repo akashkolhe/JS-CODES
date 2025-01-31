@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="otpGen()">Send Otp</button>
+    <script>
+        function otpGen(){
+            let ran=Math.random()*10000  //user define
+            // let ran=Math.random()*(Number(prompt("Enter your mobile number")))
+            let otp=Math.round(ran)
+            // return otp
+            console.log(otp);
+            // document.write(otp)
+        }
+        // console.log(otpGen());
+        // document.write(otpGen()) //to display on UI
+    </script>
+</body>
+</html>

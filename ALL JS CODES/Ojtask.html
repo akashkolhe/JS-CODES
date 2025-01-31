@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let state={
+            maharashtra:{
+                capital:"mumbai",
+                cm:"Eknath Shinde",
+                Population:30000000,
+
+            },
+            gujrat:{
+                capital:"GandhiNagar",
+                cm:"Bhupendra Patel",
+                Population:25000000,
+
+            },
+            rajastan:{
+                capital:"jaipur",
+                cm:"ashok ghelot",
+                Population:32000000,
+            },
+            up:{
+                capital:"lucknow",
+                cm:"yogi aditynath",
+                populatio:45000000
+            }
+           
+        }
+        // console.log(state);
+        // console.log(state.gujrat.cm);
+        // console.log(state.up.capital);
+
+        let st=new Object()
+        
+        st.maharashtra={
+        capital:"mumbai",
+        cm:"ek shinde"}
+
+        
+        st.Uttarpradesh={
+        capital:"lucknow",
+        cm:"yogi adityanath"
+        }
+
+        st.gujrat={
+            capital:"gandhi nagar",
+        cm:"bhupendra patel"
+
+        }
+        
+
+       // console.log(st.maharashtra.capital);
+       
+
+       //using function
+       let s=function detail(capital,cm,populatio){
+        this.capital=capital;
+        this.cm=cm;
+        this.populatio=populatio;
+       }
+
+       let maharashtra=new s("mumbai","eknath shinde",12000000);
+       let gujrat=new s("gandhinagar","patel",1000000);
+
+       maharashtra.cm="devendra fadanvis"
+       console.log(maharashtra);
+
+
+
+
+        let playing11={
+
+            batsman:{
+                openers:{
+                    strike:{
+                        name:"rohit sharma",
+                        age:38,
+                        iccrank:5,
+                    },
+                    nonstrike:{
+                        name:"shikhar dhawan",
+                        age:39,
+                        iccrank:10
+
+                    }
+
+                }
+            },
+                middleorder:{
+                    onedown:{
+                        name:"Virat kohli",
+                        age:35,
+                        iccrank:1
+                    },
+                    twodown:{
+                        name:"suryakumar Yadav",
+                        age:32,
+                        iccrank:1
+
+                    },
+                    threedown:{
+                        name:"Shreyas Iyer",
+                        age:28,
+                        iccrank:15
+                    }
+                },
+                wicketkeepar:{
+                    name:"mas dhoni",
+                    age:40,
+                    iccrank:"G.O.A.T"
+
+                
+                },
+                allrounder:{
+                    battingall:{
+                        name:"hardik pandya",
+                        age:29,
+                        iccrank:6
+
+                    },
+                    bowlingall:{
+                        name:"ravi jadeja",
+                        age:28,
+                        iccrank:11
+                    }
+
+                },
+                bowler:{
+                    fast:{
+                        name:"bhumra",
+                        age:26,
+                        iccrank:4
+                    },
+                    spin:{
+                        name:"chahal",
+                        age:28,
+                        iccrank:8
+
+                    }
+                }
+                
+
+            }
+
+        
+        console.log(playing11.middleorder.onedown);
+        console.log(playing11);
+
+
+
+
+    </script>
+    
+</body>
+</html>

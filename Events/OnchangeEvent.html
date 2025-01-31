@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #print{
+            border: 0px solid;
+            height: 17px;
+            width: 250px;
+            float: left;
+            font-size: 18px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <select name="" id="cars" onchange="getCar()">
+        <option value="BMW">BMW</option>
+        <option value="MERCEDES">MERCEDES</option>
+        <option value="ROLLS ROYCE">ROLLS ROYCE</option>
+        <option value="LAMBORGHINI">LAMBORGHINI</option>
+        <option value="PORSCHE">PORSCHE</option>
+    </select>
+    <div id="print"></div>
+    <script>
+        function getCar() {
+            let car=document.getElementById("cars").value;
+            let print=document.getElementById("print");
+            print.innerHTML="Your Choice Is "+car;
+        }
+    </script>
+</body>
+</html>

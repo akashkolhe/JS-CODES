@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let human={
+            name:"gangubai",
+            age:40,
+            husName:"atmaram"
+
+
+        }
+        console.log(human);
+        human.name="ranu mondal"//mutable (we can modify the value)
+        console.log(human);
+        human.husName="shantaram"
+        console.log(human);
+        console.log(typeof human);
+        console.log(typeof human.husName);
+        console.log(typeof human.age);
+        human.husName=["gangadhar","babubhaiya"]
+        console.log(human);
+        console.log(typeof human.husName);
+        console.log(human.husName[1]);
+        human.husName[1]="champaklal"
+        console.log(human);
+    </script>
+</body>
+</html>

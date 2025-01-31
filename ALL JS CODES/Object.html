@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //BY USING FUNCTION
+
+        var person= function name(name,age,sal) {
+            this.name=name,
+            this.age=age,
+            this.sal=sal
+        }
+        var per=new person("Monica",24,14000)
+        console.log(per);
+        console.log(per.name);
+        //update exising key
+        per.name="Kareena"
+        console.log(per);
+        //adding new key and value pair
+        per.prof="actor"
+        console.log(per);
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #doll{
+        margin-left: 50%;
+        margin-top:15%;
+    }
+  
+    #face{
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+        border-radius: 50%;
+
+    }
+    #eye1{
+        height: 25px;
+        width: 25px;
+        border: 1px solid;
+        border-radius: 50%;
+        
+    }
+    #eye2{
+        height: 25px;
+        width: 25px;
+        border: 1px solid;
+        border-radius: 50%;
+
+    }
+    #mouth{
+        height: 15px;
+        width: 50px;
+        border: 1px solid;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+       margin: 0 auto;
+       margin-top: 15px;
+    
+    }
+    #eye{
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    #body{
+        height: 150px;
+        width: 100px;
+        border: 1px solid;
+        border-radius: 40%;
+    }
+    #leg{
+        display: flex;
+        margin-top: 75px;
+       
+    }
+
+    
+    #leg1{
+        height: 70px;
+        width: 30px;
+        border: 1px solid;
+        border-radius: 37%;
+        margin-left: 3px;
+    }
+    #leg2{
+        height: 70px;
+        width: 30px;
+        border: 1px solid;
+        margin-left: 30px;
+        border-radius: 37%;
+
+    }
+    #hand{
+        display: flex;
+        margin-top: 50px;
+       
+    }
+    #hand1{
+       height: 20px;
+       width: 90px;
+       border: 1px solid;
+       border-radius: 40%;
+      
+
+    }
+    #hand2{
+        height: 20px;
+       width: 90px;
+       border: 1px solid;
+       border-radius: 40%;
+       
+    }
+    @keyframes dol {
+        from{
+            transform: scale(1.5)
+        }
+        to{
+            transform: rotate(90deg);
+        }
+        
+    }
+    
+</style>
+<body>
+    <div id="doll">
+        <div id="face">
+            <div id="eye"> 
+                <div id="eye1"></div>
+            <div id="eye2"> </div>
+            </div>
+            <div id="mouth"></div>
+        </div>
+        <div id="body">
+            <div id="hand">
+                <div id="hand1"></div>
+                <div id="hand2"></div>
+            </div>
+            <div id="leg">
+                <div id="leg1"></div>
+                <div id="leg2"></div>
+    
+            </div>
+    
+        </div>
+       
+    </div>
+    <button onclick="dance()">DANCE</button>
+    <script>
+        var a=document.getElementById("doll")
+        function dance() {
+            a.style.webkitAnimationName="dol"
+            a.style.animationDuration="2s";
+            a.style.animationIterationCount="infinity"
+            
+        }
+    </script>
+    
+    
+</body>
+</html>

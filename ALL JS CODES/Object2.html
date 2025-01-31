@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+// ** creating object with the help of literals **
+        let human={
+            // key:value;
+            name:"sheela",
+            age:28,
+            husName:"ram"
+        }
+        console.log(human);
+        // we can change value of object content
+        // i.e Object is mutable in nature
+        human.age=30;
+        console.log(human);
+
+        // array creation [value1,value2]
+        // we can assign array to object key
+        human.husName=["ram1","ram2"];
+        console.log(human);
+
+        // type of array is object
+        console.log(typeof human.husName);
+
+        // to fetch the array date by using index value
+        console.log(human.husName[1]);
+
+        // to change to array value
+        human.husName[0]="ram"
+        human.husName[1]="ram1"
+        console.log(human.husName);
+
+
+        // ** creating object with the help of new keyword and Object **
+        let cricket=new Object();
+        cricket.player="Sachin Tendulkar";
+        cricket.centuries="100";
+        cricket.runs=48000;
+        console.log(cricket);
+        // we can modify data
+        cricket.player="Sachin Sir";
+        console.log(cricket);
+
+        // nested object
+        cricket.t20={
+            matches:5,
+            centuries:1
+        }
+        console.log(cricket);
+        console.log(cricket.t20);
+        console.log(cricket.t20.matches);
+        //modify value
+        cricket.t20.centuries=2;
+        console.log(cricket.t20);
+
+// ** creating object with the help of function **
+        let emp=function demo(id,ename,sal){
+            this.id=id;
+            this.ename=ename;
+            this.sal=sal;
+        }
+        let emp1=new emp(1,"ram",50000);
+        console.log(emp1);
+        let emp2=new emp(1,"sheela",40000);
+        console.log(emp2);
+        console.log(emp2.ename);
+        emp2.ename="laila";
+        console.log(emp2.ename);
+    </script>
+</body>
+</html>

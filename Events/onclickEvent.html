@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #output{
+            height: 40px;
+            width: 120px;
+            border: 1px solid black;
+            font-size: 32px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="output">0</div>
+    <br>
+    <button onclick="add()">ADD</button>
+    <button onclick="remove()">REMOVE</button>
+
+    <script>
+        var a=0;
+        var ele=document.getElementById("output");
+        function add() {
+            a++;
+            ele.innerHTML=a;
+        }
+        function remove() {
+            if(a!=0){
+                a--;
+                ele.innerHTML=a;
+            }
+        }
+    </script>
+</body>
+</html>

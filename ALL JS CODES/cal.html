@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        #parent{
+            width: 300px;
+            height:470px;
+            background-color: white;
+            position: absolute;
+            border: 5px solid black;
+            border-radius: 6px; 
+        }
+        #inp{
+            width: 88%;
+            position: relative;
+            height: 80px;
+            top: 5px;
+            text-align: right;
+            padding: 3px 6px;
+            outline: none;
+            font-size: 40px;
+            /* border: 5px solid black; */
+            display: flex;
+            margin: auto;
+            border-radius: 6px;
+            color: black;
+        }
+        .no{
+            width:90px;
+            padding: 2px;
+            margin: 2px 0px;
+            position: relative;
+            left: 13px;
+            top: 20px;
+            height: 60px;
+            
+            font-size: 18px;
+            transition: 0.5s;
+            background-color: #495250;
+            border-radius: 6px;
+            color: white;
+        }
+    </style>
+<body>
+    <div id="parent">
+        <input type="text" name="" id="inp">
+        <label for="" id="print"></label>
+        <p id="priint"></p>
+
+        <div id="child">
+            <!-- <button class="no" id="num" onclick="cal()">AC</button> -->
+            <button class="no" id="num1" onclick="cal(1)" value="1">1</button>
+            <button class="no" id="num2" onclick="cal(2)" value="2">2</button>
+            <button class="no" id="num3" onclick="cal(3)" value="3">3</button>
+            <br>
+            <button class="no" id="num4" onclick="cal(4)" value="4" >4</button>
+            <button class="no" id="num5" onclick="cal(5)" value="5">5</button>
+            <button class="no" id="num6" onclick="cal(6)" value="6">6</button>
+            <br>
+            <button class="no" id="num7" onclick="cal(7)" value="7">7</button>
+            <button class="no" id="num8" onclick="cal(8)" value="8">8</button>
+            <button class="no" id="num9" onclick="cal(9)" value="9">9</button>
+            <br>
+            <button class="no" id="num0" onclick="cal(0)" value="0">0</button>
+            <!-- <button class="no" id="dot" onclick="cal('.')">.</button> -->
+            <button class="no" id="add"  onclick="cal('+')">+</button>
+            <button class="no" id="div"  onclick="cal('/')">/</button>
+            <br>
+            <button class="no" id="sub" onclick="cal('-')">-</button>
+            <button class="no" id="mul" onclick="cal('*')">X</button>
+            <button class="no" id="eq"  onclick="calculation()">=</button>
+            
+        </div>
+    </div>
+
+    <script>
+        function cal(no) {
+            document.getElementById("inp").value += no;
+        }
+
+        function calculation() {
+            var a=document.getElementById("inp").value;
+            var b =eval(a);
+            
+            document.getElementById('res').value = b;
+        }
+        
+    </script>
+</body>
+
+</html>

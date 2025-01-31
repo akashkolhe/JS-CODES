@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 50px;
+            width: 100px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="in">
+    <input type="text" name="" id="in1">
+  <div id="print"></div>
+    <button onclick="gatAdd()">ADDITION</button>
+    <button onclick="gatSub()">SUB</button>
+    <button onclick="gatDiv()">Div</button>
+    <button onclick="mul()">MUL</button>
+    <script>
+        function gatAdd() {
+            let ele1=document.getElementById("in").value;
+            let ele2=document.getElementById("in1").value;
+            let pri=document.getElementById("print")
+            pri.innerHTML="Addition is" + (Number(ele1)+Number(ele2))
+            
+            pri.style.color="red"
+
+            
+        }
+        function gatSub() {
+            let ele1=document.getElementById("in").value;
+            let ele2=document.getElementById("in1").value;
+            let pri=document.getElementById("print")
+            pri.innerHTML="Sub is" + (Number(ele1)-Number(ele2))
+            
+            pri.style.color="red"
+
+            
+        }
+        function gatDiv() {
+            let ele1=document.getElementById("in").value;
+            let ele2=document.getElementById("in1").value;
+            let pri=document.getElementById("print")
+            pri.innerHTML="Sub is" + (Number(ele1)/Number(ele2))
+           
+            pri.style.color="red"
+
+            
+        }
+        function mul() {
+
+            let ele1=document.getElementById("in").value
+            let ele2=document.getElementById("in1").value
+            let pri=document.getElementById("print")
+            pri.innerHTML="mul is"+(Number(ele1)*Number(ele2))
+
+            pri.style.color="green"
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //implicite typecasting
+        console.log(5+5);//number +number=number
+        console.log("5"-2);//Valid string converting into number number-number=number(it will perform operation because (-) )
+        console.log(true+1);//value of true=1,false=0 1+1=2
+        console.log("true"+true); //String is not valid to converting into number String+anything=String
+        console.log("10"-2);//valid string to converting into number
+        console.log(true+true);//1+1=2
+        console.log("true"+1);//not valid String to converting into number String+number=String
+        console.log(false-2);//0-2=-2
+        console.log("5"+5);
+
+        //explicite typecasting
+
+        console.log("5"+5);//55
+        console.log(Number("5")+5); 
+        console.log(Boolean("true")+2);   //3
+        console.log(Boolean("true")+"false"); // truefalse
+        console.log(Boolean("true")+false);//1
+        console.log(Number("a")+5);//NaN(not a number )
+        console.log(String(5)+5);  //55
+        console.log(String(false)-1);
+        console.log(Number("false")+false);
+        var a=Boolean("false")+1
+        console.log(a);
+        console.log(false);
+
+
+        //String can not perform (-) operation if it is not valid String to convertin into number then output is NaN(not a number)
+
+    </script>
+    
+</body>
+</html>

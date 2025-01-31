@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Object = mobile
+        let mobile={
+            company:"Apple",
+            price:140000,
+            make:"California"
+        }
+        console.log(typeof mobile);
+        console.log(mobile);
+        console.log(mobile.company);
+        console.log(mobile.price);
+        //UPDATE
+        mobile.price=15000
+        console.log(mobile);
+        mobile.company;
+
+
+
+
+        // BY USING NEW KEYWORD
+        var human=new Object()
+
+        human.name="Katrina"
+        human.contact=1234
+        console.log(human);
+        human.name="kareena kapoor"
+        console.log(human);
+
+        // var person=function name(name,age,sal)
+        //     { this.name=name,
+        //      this.age=age
+        //      this.sal=sal
+        //     }
+        //     var per=new person("suvarna",23,11000)
+        //     console.log(per);
+        //      console.log(per.name);
+        //     //  update existing key
+        //      per.name="komal shende"
+        //     console.log(per);
+        //     // adding new key and value pair 
+        //     per.prof="singer"
+        //     console.log(per);
+
+        let adv={
+                adhar:{
+                    name:"ranu mandal",
+                    age:55,
+                }
+             }
+                console.log(adv.adhar);
+                // update existing pair 
+                adv.adhar.name="monica"
+                console.log(adv.adhar);
+                // adding new pair 
+                adv.adhar1={
+                    name:"cr7",
+                    wife:{
+                        name:"gangubai",
+                        age:23
+                    }
+                }
+                console.log(adv);
+                adv.adhar1.age=36
+                console.log(adv.adhar1);
+                console.log(adv.adhar1.wife.name);
+
+        
+    </script>
+</body>
+</html>

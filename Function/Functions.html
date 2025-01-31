@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions. <br>
+        Types of Functions:- <br>
+        - Functions declaration. <br>
+        - Function Expression. <br>
+        - Anonymous Function. <br>
+        - Arrow Function. <br>
+        - IIFE(IIY)
+    </h1>
+    <script>
+        //function declaration.
+        //function call stt {caller}
+        demo();//function Hosting
+        function demo() {
+            console.log("This is non parametrized function declaration");            
+        }
+        //function Expression
+        var fun = function demo2() {
+            console.log("This is function Expression");
+        }
+        fun();//Function call stt {caller}.
+
+        //ANONYMOUS FUNCTION
+        let Anonymous = function(){
+            console.log("This is Anonymous function");
+        }
+        Anonymous();//Function call stt {caller}.
+
+        //ARROW FUNCTION.
+        let arrow = ()=>{
+            console.log("This is arrow Function");
+        }
+        arrow();//Function call stt {caller}.
+        
+        //Parametrized function
+        let add = (a,b)=>{
+            return a+b;
+          
+        }
+        //console.log(add(10));
+        //console.log(add(40,60));
+        console.log(add(a=Number(prompt("enter the first Number")),b=Number(prompt("enthe second number"))));
+
+        //IIFE
+        (function(){
+            console.log("this is IIFE");
+        }())
+        
+    </script>
+</body>
+</html>

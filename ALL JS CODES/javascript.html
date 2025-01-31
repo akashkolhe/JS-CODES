@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 300px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background: rgb(255, 255, 255);
+            font-size: 18px;
+            animation: time;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction:reverse;
+            transition: ease-out;
+        }
+        @keyframes time{
+            50%{
+            height: 100px;
+            width: 300px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            background: rgb(255, 255, 255);
+            font-size: 18px;
+            }
+            100%{
+                height: 100px;
+            width: 300px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            background: rgb(255, 255, 255);
+            font-size: 18px;
+            }
+        }
+    </style>
+  </head>
+  <body onload="time()">
+    <div><h1 id="demo">h</h1></div>
+    <script>
+    function time(){
+const d = new Date();
+let h = d.getHours();
+let m = d.getMinutes();
+let s = d.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById("demo").innerHTML = h+":"+m+":"+s;
+setTimeout(time ,1000);
+}
+function checkTime(i){
+    if(i<10)
+    { i = "0"+i;}
+    return i;
+}
+
+    </script>
+  </body>
+</html>

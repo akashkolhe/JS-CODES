@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("start");
+        //INITIALIZATION AND DECLARATION
+
+
+        //REDECLARATION IS NOT POSSIBLE
+        let a=10;
+        console.log(a);
+        //let a=20;
+       //console.log(a);//  Uncaught SyntaxError: Identifier 'a' has already been declared 
+
+       //REINITIALIZATION IS POSSIBLE
+       let b=25;
+       console.log(b);
+       console.log(typeof b);
+        b=true;
+        console.log(b);
+        console.log(typeof b);
+
+        //let is a block scope variable
+        if(true){
+            let c="block scope";
+        }
+       // console.log(c);//  Uncaught ReferenceError: c is not defined
+
+
+       //HOISTING IS NOT POSSIBLE IN TERMS OF let VARIABLE
+       d=20;
+       let d;
+       console.log(d);//Uncaught ReferenceError: Cannot access 'd' before initialization
+    </script>
+    
+</body>
+</html>

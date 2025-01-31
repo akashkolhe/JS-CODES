@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .signal{
+            height: 70px;
+            width: 70px;
+            border: 1px solid;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 15px;
+            
+
+        }
+        #box{
+            height: 300px;
+            width: 100px;
+            border: 1px solid;
+            background-color: rgb(34, 33, 33);
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+        button{
+           width: 100px;
+            margin-top: 20px;
+            
+
+
+        }
+    </style>
+    
+</head>
+<body>
+   <div id="box">
+    <div class="signal"></div>
+    <div class="signal"></div>
+    <div class="signal"></div>
+    
+   </div>
+    
+  
+   
+    <script>
+        let ele=document.getElementsByClassName("signal");
+       
+        
+        
+     
+        
+        var signal=prompt("enter signal");
+       
+       
+        if (signal=="stop") {
+            
+            ele[0].style.backgroundColor="red";
+          
+            
+            
+        }
+        else if (signal=="go") {
+            ele[1].style.backgroundColor="green";
+            
+        } 
+        else if (signal=="caution") {
+            ele[2].style.backgroundColor="orange";
+        }
+    
+      
+
+
+    </script>
+</body>
+</html>

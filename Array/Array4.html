@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let arr1=["ram K","singer",65]
+    console.log(arr1);
+
+    // push()it is used to add an element (multiple) from last index
+    arr1.push("push1","push2");
+    console.log(arr1);
+
+    //pop()it is used to delete an element (single element) from an last index
+    // arr1.pop()
+    // console.log(arr1);
+
+    //unshift() : it is used to add an element(multiple) from first index
+    // arr1.unshift(10,20,true);
+    // console.log(arr1);
+
+    // shift(): it is used to delete an element(single element) from first index
+    // arr1.shift();
+    // console.log(arr1);
+
+    // include(): check element is present or not, 
+    // if yes then it means it will returns us true or else false
+    // console.log(arr1.includes(65));
+
+    //reverse():
+    arr1.reverse();
+    console.log(arr1);
+
+    // indexof() : check index of an element
+    console.log( arr1.indexOf("singer"));
+    
+    //slice():
+
+     let num=[10,20,30,40,50,60]; //index(5) & Length(6)
+        console.log(num.slice(2,3));
+
+    //splice(start,count,new element) add element at any position and fetch elemet in any postion using splice
+    let fruit=["orange","pineapple","strawberry"]
+    fruit.splice(2,0,"apple","sapota")
+    console.log(fruit);
+    fruit.splice(1,2,"dragonfruit","custordapple","grapes")
+    console.log(fruit);
+    //length() :it is used to find length of an aaray.
+    //sort() : 
+    let num2=[80,70,50,60,30,20];
+    num2.sort();
+    console.log(num2);
+</script>
+</body>
+</html>

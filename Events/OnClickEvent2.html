@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <input type="text" id="id1" value="">
+    <br>
+    <input type="text" id="id2" value="">
+    <br>
+    <button onclick="getAdd()">ADD HERE</button>
+    <br>
+    <p id="print">Output will print here !!</p>
+    <script>
+        function getAdd(){
+            let ele1=document.getElementById("id1").value;
+            let  ele2=document.getElementById("id2").value;
+            let print=document.getElementById("print")
+            print.innerHTML="Addition is : "+ (Number(ele1)+Number(ele2));
+            print.style.fontSize="30px";
+            print.style.color="red";
+        }
+    </script>
+</body>
+</html>

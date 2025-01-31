@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 400px;
+            height: 350px;
+            border: 2px solid;
+            margin: 280px;
+            margin-top: 10px;
+
+        }
+        .box{
+            width: 300px;
+            height: 50px;
+            border:2px solid ;
+            margin-top: 15px;
+            margin-left: 50px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            font-size: 29px;
+            background-color: rgba(228, 226, 224, 0.881);
+            border: none;
+            border-bottom: 1px solid;
+        }
+        #ans{
+            font-size: 19px;
+
+
+        }
+        #ans{
+            border:none;
+            background-color: aliceblue;
+            text-align: center;
+        }
+        #btn{
+            border: 1px solid;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 22px;
+            margin-left: 40px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <center><h1>SIMPLE CALCULATOR</h1></center>
+    <div id="parent">
+        <input type="text"class="box" id="n1"><br>
+        
+        <input type="text"class="box" id="n2">
+        <p id="ans" class="box"></p>
+        <button id="btn" onclick="add()">+</button>
+        <button id="btn" onclick="sub()">-</button>
+        <button id="btn" onclick="mul()">*</button>
+        <button id="btn" onclick="div()">/</button>
+        
+    </div>
+    <script>
+        var ele1=document.getElementById("n1");
+        var ele2=document.getElementById("n2");
+        var ans=document.getElementById("ans");
+        function add(){
+            ans.innerHTML="ADDITION IS = "+ (Number(ele1.value)+Number(ele2.value));
+            ans.style.color="red";
+        }
+        function sub(){
+            ans.innerHTML="SUBSTRACTION IS = "+ (Number(ele1.value)-Number(ele2.value));
+            ans.style.color="blue";
+        }
+        function mul(){
+            ans.innerHTML="MULTIPLICATION IS = "+ (Number(ele1.value)*Number(ele2.value));
+            ans.style.color="ORANGE";
+        }
+        function div(){
+            ans.innerHTML="Division IS = "+ (Number(ele1.value)/Number(ele2.value));
+            ans.style.color="red";
+        }
+    </script>
+</body>
+</html>

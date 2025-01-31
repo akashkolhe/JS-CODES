@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="text" oncut="getCut()">
+    <p id="print"></p>
+
+    <script>
+        function getCut() {
+            let ele=document.getElementById("text").value;
+            let print=document.getElementById("print");
+            print.innerHTML="Your Text Is Cut!!!!";
+        }
+    </script>
+</body>
+</html>

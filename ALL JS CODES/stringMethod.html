@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // length():TO CHECK THE LENGTH OF STRING
+        let str="String";
+        console.log(str.length);
+
+        //slice():to get the element from start ind to End ind but skip last index
+        console.log(str.slice(1,4));
+
+        //toUpperCase():IT IS USED TO CONVER STRING INTO UPPERCASE
+        let str1="uppercase";
+        console.log(str1.toUpperCase());
+
+        // toLowerCase():IT IS USED TO CONVER STRING INTO LOWERCASE
+        let str2="LOWERCASE";
+        console.log(str2.toLowerCase());
+
+        //concat():IT IS USED TO ADD TO STRING EX-'AB'+'HI'='ABHI';
+        let str3='ab';
+        let str4='hi';
+        console.log(str3+str4);
+        console.log(str3.concat(str4));
+
+        //charAt():IT IS USED TO PRINT THE ELEMENT AT GIVEN INDEX
+        let str5="charAt";
+        console.log(str5.charAt(3));
+
+        //charAtCode(index):IT IS USED TO CHECK THE CHARACTER ASCII VALUE AT GIVEN INDEX
+        let str6="charAtCode";
+        console.log(str6.charCodeAt(2));
+
+        //replace():IT IS USED REPLACE THE STRING BY USING NEW STRING
+        let str7="pune to goa";
+        console.log(str7.replace("pune","mumbai"));
+
+        //repeat(COUNT):IT IS USED TO REPEATE THE STRING
+        console.log(str7.repeat(5));
+
+        // startWith():IS IS USED TO CHECK WHETER THE STRING IS START WITH SPECIFIC CHARACHTER 
+        // OR NOT IF YES MEANS IT WILL RETURN TRUE OR ELSE FALSE
+        
+        let str8="startWith";
+        console.log(str8.startsWith("S"));
+        console.log(str8.startsWith("s"));
+
+        //endWith():IS IS USED TO CHECK WHETER THE STRING IS END WITH SPECIFIC CHARACHTER 
+        // OR NOT IF YES MEANS IT WILL RETURN TRUE OR ELSE FALSE
+        let str9="endWith";
+        console.log(str9.endsWith("H"));
+        console.log(str9.endsWith("h"));
+
+        //trim():IT IS USED TO REMOVE THE WIDE SPACE IN BETWEEN STRING
+        let str10=" trim";
+        console.log("str10");
+        console.log(str10.length);
+        console.log(str10.trim());
+
+        //trimStart():IT IS USED TO REMOVE THE WIDE SPACE OF STRING  FROM  START
+        let str11=" trimstart"
+        console.log(str11);
+        console.log(str11.trimStart());
+
+        //trimEnd():IT IS USED TO REMOVE THE WIDE SPACE OF STRING FROM END
+        let str12="trimEnd ";
+        console.log(str12);
+        console.log(str12.trimEnd());
+
+        //substr(st.index,last index)
+        let str13="substr";
+        console.log(str13.substr(1,3));
+
+        let slice1="java Script";
+        console.log(slice1.slice(-4));
+
+        //includes():IT IS USED TO CHECK WHETER THE GIVEN CHARACHTER IS PERSENT OR NOT 
+        let str14="includes"
+        console.log(str14.includes("i"));
+
+        //indexOf():IT IS USED TO FIND THE INDEX OF PASSED CHARACHTER
+        let str15="indexof";
+        console.log(str15.indexOf("x"));
+
+
+    </script>
+</body>
+</html>

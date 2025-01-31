@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text" ondblclick="getDoubleClick()">Double Click Here !!!!</p>
+
+    <script>
+        function getDoubleClick() {
+            let ele=document.getElementById("text");
+            ele.innerHTML="I Was Double Clicked";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 1px solid;
+            padding: 10px;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .box{
+            height: 50px;
+            width: 200px;
+            border: 1px solid;
+            font-size: 35px;
+            text-align: right;
+            padding: 5px;
+        }
+        #keys{
+            display: flex;
+            gap: 10px;
+        }
+        .btn{
+            padding: 10px;
+            font-size: 30px;
+            height: 50px;
+            width: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <input id="box1" type="text" class="box" ></input>
+        <input id="box2" type="text" class="box" ></input>
+        <div id="keys">
+            <button id="button" class="btn" onclick="add()">+</button>
+            <button id="button" class="btn" onclick="sub()">-</button>
+            <button id="button" class="btn" onclick="mul()">*</button>
+            <button id="button" class="btn" onclick="div()">/</button>
+        </div>
+        <div id="result" class="box">0</div>
+    </div>
+
+    <script>
+            var ele=document.getElementById("result");
+            var n1=document.getElementById("box1");
+            var n2=document.getElementById("box2");
+            
+        function add() {
+            ele.innerHTML=Number(n1.value)+Number(n2.value);
+        }
+        function sub() {
+            ele.innerHTML=Number(n1.value)-Number(n2.value);
+        }
+        function mul() {
+            ele.innerHTML=Number(n1.value)*Number(n2.value);
+        }
+        function div() {
+                ele.innerHTML=Number(n1.value)/Number(n2.value);
+           
+        }
+    </script>
+</body>
+</html>

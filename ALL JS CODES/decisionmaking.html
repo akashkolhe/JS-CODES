@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decision Making Statements</title>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+    <h1>Decision making statements</h1>
+    <h3>
+      1.If statement <br />
+      2.If-else statements <br />
+      3.Else-if ladder <br />
+      4.Switch case
+    </h3>
+    <br />
+    <h4>Switch case output</h4>
+    <h5 id="s" >_</h5>
+
+    <script>
+      // if statement
+      if (true) {
+        console.log("If condition is true");
+      }
+
+      // if-else statement
+      if (false) {
+        console.log("if condition is true");
+      } else {
+        console.log("if condition is false therefore else executed");
+      }
+
+      // else-if-ladder statement
+      if (false) {
+        console.log("if condition is true");
+      } else if (true) {
+        console.log("else-if condition is true");
+      } else {
+        console.log("else executed");
+      }
+
+      // switch case
+
+      switch (Number(prompt("Enter Number Between 1 to 6"))) {
+        case 1:
+          var a = 1;
+          console.log("1");
+          document.getElementById("s").innerHTML = a + "<br>";
+          document.getElementById("s").style.color="green";
+          break;
+        case 2:
+          var b = 2;
+          console.log("2");
+          document.getElementById("s").innerHTML = b + "<br>";
+          break;
+        case 3:
+          var c = 3;
+          console.log("3");
+          document.getElementById("s").innerHTML = c + "<br>";
+          break;
+        case 4:
+          var d = 4;
+          console.log("4");
+          document.getElementById("s").innerHTML = d + "<br>";
+          break;
+        case 5:
+          var e = 5;
+          console.log("5");
+          document.getElementById("s").innerHTML = e + "<br>";
+        case 6:
+          var f = 6;
+          console.log("6");
+          document.getElementById("s").innerHTML = f + "<br>";
+          break;
+        default:
+          var g = "wrong input";
+          console.log("Please provide valid input");
+          document.getElementById("s").innerHTML = g + "<br>";
+          document.getElementById("s").style.color="red";
+          break;
+      }
+      // if (i===1) {
+      //     document.getElementById("s").innerHTML=a+"<br>"+b+"<br>"+c+"<br>"+d;
+      // } else if(i===5) {
+      //     document.getElementById("s").innerHTML=e+"<br>"+f;
+      // }
+      // else{
+      //     document.getElementById("s").innerHTML=g;
+      // }
+    </script>
+  </body>
+</html>

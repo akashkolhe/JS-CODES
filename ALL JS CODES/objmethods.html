@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //object methods
+        //add method
+        // let obj={
+        //     price:15000,
+
+        // }
+        // obj.name="apple"
+        // console.log(obj);
+
+        //delete method
+        // delete obj.price
+        // console.log(obj);
+
+        //assign method which is use to merge objects
+
+        // let samsung={
+        //     model:"new guru"
+
+        // }
+        // let apple={
+        //     price:14000
+        // }
+        // console.log(Object.assign(samsung,apple));
+
+
+        let key1={
+            name:"sonya",
+            edu:" 8th failed"
+        }
+        console.log(Object.keys(key1));
+
+        //Values method
+        console.log(Object.values(key1));
+
+        //freeze method we cannot modify component
+        console.log(Object.freeze(key1));
+        key1.name="golya"
+        console.log(key1);
+        
+    </script>
+</body>
+</html>

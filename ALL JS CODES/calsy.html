@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+         font-family: 'poppins', sans-serif;
+      }
+      body{
+         background-color: rgb(23, 83, 83);
+         margin-top: 100px;
+         margin-left: 300px;
+      }
+      .parent{
+         width: 420px;
+         height: 500px;
+         background-color: white;
+         
+         position: absolute;
+         border: 5px solid black;
+         border-radius: 10%; 
+      }
+      #res {
+         width: 88%;
+         position: relative;
+         height: 80px;
+         top: 5px;
+         text-align: right;
+         padding: 3px 6px;
+         outline: none;
+         font-size: 40px;
+         border: 5px solid black;
+         display: flex;
+         margin: auto;
+         border-radius: 15%;
+         color: black;
+      }
+      .btn[type='button']{
+         width:90px;
+         padding: 20px;
+         margin: 3px 1px;
+         left: 18px;
+         top: 20px;
+         height: 60px;
+         font-size: 22px;
+         position: relative;
+         transition: 0.5s;
+         background-color: #5f6541;
+         border-radius: 6px;
+         color: rgb(243, 241, 223);
+      }
+      .btn:hover{
+         background-color: antiquewhite;
+         color:black;
+      }
+   </style>
+   
+   
+</head>
+<body>
+      <div class="parent">
+         <center><h1>CALCULATOR</h1></center>
+      <input type="text" id = 'res'>
+      <div class="btn" id="no">
+         <input type="button" class="btn" value = 'C' onclick = "Clear()">
+         <input type="button" class="btn" value = '%' onclick = "cal('%')">
+         <input type="button" class="btn" value = '←' onclick ="Back('←')">
+         <input type="button" class="btn" value = '/' onclick = "cal('/')">
+         <br>
+         <input type="button" class="btn" value = '7' onclick = "cal('7')">
+         <input type="button" class="btn" value = '8' onclick = "cal('8')">
+         <input type="button" class="btn" value = '9' onclick = "cal('9')">
+         <input type="button" class="btn" value = 'x' onclick = "cal('*')">
+         <br>
+         <input type="button" class="btn"  value = '4' onclick = "cal('4')">
+         <input type="button" class="btn" value = '5' onclick = "cal('5')">
+         <input type="button" class="btn" value = '6' onclick = "cal('6')">
+         <input type="button" class="btn" value = '-' onclick = "cal('-')">
+         <br>
+         <input type="button" class="btn" value = '1' onclick = "cal('1')">
+         <input type="button" class="btn" value = '2' onclick = "cal('2')">
+         <input type="button" class="btn" value = '3' onclick = "cal('3')">
+         <input type="button" class="btn" value = '+' onclick = "cal('+')">
+         <br>
+         <input type="button" class="btn" value = '00'onclick = "cal('00')">
+         <input type="button" class="btn" value = '0' onclick = "cal('0')">
+         <input type="button" class="btn" value = '.' onclick = "cal('.')">
+         <input type="button" class="btn" value = '=' onclick = "Result()">
+      </div>
+   </div>
+   <script>
+        function cal(val) {
+            var v = document.getElementById('res');
+            v.value += val;
+        }
+        function Result() {
+            var num1 = document.getElementById('res').value;
+            var num2 = eval(num1);
+            document.getElementById('res').value = num2;
+        }
+        function Clear() {
+            var inp = document.getElementById('res');
+            inp.value = '';
+        }
+       
+   </script>
+</body>
+</html>

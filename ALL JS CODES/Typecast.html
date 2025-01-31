@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //implicite typecasting
+
+        console.log("a" + 2);
+
+        console.log(5 + 5);
+
+        console.log("5" - 2); //"5" :- String(number) is convert to a number
+
+        console.log("true" + 2); //concatination "true" :- true is a valid string(String)
+
+        console.log(false - "2"); // 2 is convert to a number   
+
+        console.log("true" + true);
+
+        //explicite typecasting
+
+        console.log(Number("5") + 5); //10
+
+        console.log(Number("a") + 2); //Nan
+
+        console.log(Boolean("true") + 2); // true = 1; 1 + 2 = 3
+
+        console.log(Boolean("true") + "false"); //truefalse; false is valid string
+
+        console.log(String(5) + 5); //55 conactination
+
+        console.log(Boolean("true") + false);  // 1 ; false = 0 ; true = 1 ;
+
+        console.log(String(false) - 1); // Nan  //string is not substitud the number
+    </script> 
+</body>
+</html>

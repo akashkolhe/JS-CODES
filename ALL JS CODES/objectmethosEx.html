@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name:"object",
+            id:1,
+        }
+        console.log(obj);
+        // delete() to use delete key inside object
+        // delete(obj.id);
+         delete obj.id;
+        console.log(obj);
+
+        // objName.key=value
+        obj.id=10;
+        console.log(obj);
+        // freeze() is use to restrict the user from adding keys and values
+        Object.freeze(obj);
+        obj.bg="+o";
+        console.log(obj);
+        //seal() use to restrict user from delete key inside object
+        Object.seal(obj);
+        delete obj.name;
+        console.log(obj);
+
+        let ent={
+            name : "apple",
+            type:"fruit",
+            color:"red"
+        }
+        console.log(ent);
+        // Object.entries(objName) is use to display object values in array format
+        console.log(Object.entries(ent));
+        // Object.values(objName) is use to display only values
+        console.log(Object.values(ent));
+        // Object.keys(objName) is used to display only keys 
+        console.log(Object.keys(ent));
+
+        let obj1 ={
+            name:"abc",
+            age:55
+        }
+        let obj2={
+            age:10,
+            contact:1234,
+            name:"xyz"
+        }
+        console.log(Object.assign(obj1,obj2));
+
+        
+    </script>
+</body>
+</html>

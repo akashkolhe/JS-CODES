@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //VARIABLE TYPES - VAR , LET, CONST
+        //SYMTAX OF VARIABLE : VAR VARVARIABLE_NAME =VALUE
+        //VAR VARIABLE
+        //DECLARATION AND INITIALIZATION
+        var a=10;
+        console.log(a);
+        //REDECLARATION IS POSSIBLE
+        var a="string"
+        console.log(a);
+        var a=true
+        console.log(a);
+        //RE-INITIALIZATION IS POSSIBLE
+        a=false
+        console.log(a);
+        //HOISTING(first the variable  inistializing then variable declaration then print variable is known hoisting)
+        //(re-initializing, re-declaration, hoisting is possible in VAR)
+        b="string2"
+        var b
+        console.log(b);
+        
+
+
+
+        //2. LET VARIABLE
+        let c=10;
+        console.log(c);
+        //REDECLARATION IS NOT POSSIBLE IN LET VARIABLE
+        // let c=10;
+        // console.log(c);
+        //RE-INITIALIZATION IS POSSIBLE IN LET VARIABLE 
+        c=20;
+        console.log(c);
+
+        //HOISTING
+        // d="hoisting"
+        // let d;
+        // console.log(d);
+        //hoisting is not possible in let variable 
+
+        let d="str"
+        console.log(d);//REDECLARATION
+
+
+
+
+
+        //3. CONST VARIABLE
+        const str="const variable"
+        console.log(str);
+        //redeclaration is not possible in const variable
+        //const str=10
+
+
+        //re-initialization is not possible in const variable 
+        str="updated const"
+        console.log(str);
+
+        //hoisting and declaration is not possible in const variable
+
+        // hoist="hoisting"
+        // const hoist;
+        // console.log(hoist);
+
+    </script>
+</body>
+</html>

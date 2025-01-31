@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create object for parent
+        let mobile={
+            samsung:{
+                model:"s1",
+                price:10000,
+            }
+            ,
+            apple:{
+                model:"11pro",
+                price:70000,
+            }
+            ,
+            oneplus:{
+                model:"7pro",
+                price:30000,
+            }   
+        }
+        console.log(mobile);
+        //we can fetch specific detail of mobile by separating value with (.)
+        console.log(mobile.apple.model);
+
+        //we can modify detail also
+        mobile.apple.model="14promax";
+        console.log(mobile);
+        console.log(mobile.apple.model);
+    </script>
+</body>
+</html>

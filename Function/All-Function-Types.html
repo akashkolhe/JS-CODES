@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1)Function declaration
+        //function call statement (caller)
+        demo();//fun hoisting possible
+        function demo() {
+            console.log("non parameterized function declaration");
+        }
+
+        //2)Function Expression:-storing function declaration into variable
+        var fun1=function demo2() {
+            console.log("this is function expression");
+        }
+        fun1();//caller of function(hoisting is not possible)
+
+        //3)Anonymous Function:-it does not contain function name
+
+         let an=function () {
+            console.log("this is anonymous function");
+        }
+        an();//caller of function(hoisting is not possible)
+
+        //4)Arrow Function
+
+        let arr=()=>{
+            console.log("this is arrow fuction");
+        }
+        arr();//caller of function(hoisting is not possible)
+
+        //5)IIFE(immediately Invoke functon Expression);-it calls only one time
+
+        (function(){
+        console.log("this is IIFE");
+        }())
+
+    </script>
+</body>
+</html>

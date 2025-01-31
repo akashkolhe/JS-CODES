@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays.....</h1>
+    <script>
+        let arr=[10,true,"String"];
+        console.log(arr);
+        console.log(typeof arr);
+        arr[4]="Forth";
+        console.log(arr[3]);
+        console.log(arr);
+        console.log("............................");
+        let arr1 = [10,{name:"Ram",id:"wpro123"}]
+        console.log(arr1[1]);
+        console.log(arr1[1].name);
+        arr1[1].name="Sham";
+        arr1[1].email="example@";
+        console.log(arr1);
+
+        console.log("...........");
+
+        let arr2= [{arr3:[1,2,"Nasted array"]},true,20];
+        arr2[0].arr3[2]="Updated array";
+        console.log(arr2);
+        
+        
+        console.log("......2D ARRAY......");
+        let arr2d = [[true,"2dArray"],[false,"2dArray"]];
+        console.log(arr2d[0][1]);
+        arr2d[0][1]="Updated 2d arrays";
+        console.log(arr2d);
+
+    </script>
+</body>
+</html>
